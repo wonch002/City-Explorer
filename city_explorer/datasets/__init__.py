@@ -1,4 +1,4 @@
-"""File to contain a python reference to all filepaths."""
+"""Module to contain all data loaders specific to each dataset."""
 import os
 
 

@@ -1,11 +1,10 @@
 """Module for processing all datasets."""
-
 import os
 
 import pandas as pd
 
 
-# Definitions for
+# Definitions for filepaths to datasets
 USCITIES_FILE = os.path.join(os.path.dirname(__file__), "cities/uscities.csv")
 INCOME_MICRODATA_FILE = os.path.join(
     os.path.dirname(__file__), "income/income_microdata.csv"

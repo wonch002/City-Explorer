@@ -1,4 +1,4 @@
-"""Tools for loading the datasets."""
+"""Tools for returning prepared datasets."""
 import os
 import logging
 
