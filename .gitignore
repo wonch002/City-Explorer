@@ -7,3 +7,43 @@
 
 # Mac OS-specific storage files
 .DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+.Python
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter NB Checkpoints
+.ipynb_checkpoints/
+lab/
+migrated
+.Trash-*
+
+# vim
+*.swp
+*.swo
+
+# vscode
+.vscode/settings.json
+.vscode/.ropeproject
