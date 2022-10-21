@@ -1,0 +1,6 @@
+# Ignore all CSV files except for the cities CSV
+*.csv
+!city_explorer/datasets/cities/uscities.csv
+
+# Ignore all JSON files
+*.json
