@@ -4,3 +4,6 @@
 
 # Ignore all JSON files
 *.json
+
+# Mac OS-specific storage files
+.DS_Store
