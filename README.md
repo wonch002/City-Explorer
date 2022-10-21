@@ -1,15 +1,10 @@
 # Overview
 
 
-## Contributors
+## Project Contributors
 
-Class CSE6242
+Georgia Institute of Technology
 
-Team 162
+CSE6242 - Team 162
 
-Project Memebers:
-
-Cameron Wonchoba
-Krishna Tatineni
-Matthew Tate
-Anand Ankit
+Ankit Anand, Matthew Tate, Krishna Tatineni, Cameron Wonchoba
