@@ -2,8 +2,15 @@
 *.csv
 !city_explorer/datasets/cities/uscities.csv
 
+# compressed pandas data
+*.parquet
+
 # Ignore all JSON files
 *.json
+
+# archived/compressed files
+*.zip
+*.7z
 
 # Mac OS-specific storage files
 .DS_Store
