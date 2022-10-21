@@ -34,7 +34,7 @@ def load_input_data(data_cache_filepath: str = None) -> pd.DataFrame:
         logger.info("Reading data from cache: %s", data_cache_filepath)
         df_input = pd.read_parquet(data_cache_filepath)
     else:
-        df_uscities = datasets.load_uscities()
+        df_uscities = datasets.uscities()
 
         # Merge all datasets together
         df_input = df_uscities.copy()
