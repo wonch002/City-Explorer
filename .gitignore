@@ -57,3 +57,6 @@ migrated
 # vscode
 .vscode/settings.json
 .vscode/.ropeproject
+~POC_Dashboard__27324.twbr
+.idea
+*.xlsx

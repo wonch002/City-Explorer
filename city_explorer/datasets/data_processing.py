@@ -10,6 +10,7 @@ INCOME_MICRODATA_FILE = os.path.join(
     os.path.dirname(__file__), "income/income_microdata.csv"
 )
 RENT_MICRODATA_FILE = os.path.join(os.path.dirname(__file__), "rent/rent_microdata.csv")
+LABOR_SHED_FILE = os.path.join(os.path_dirname(__file__), "geo_regions/labor_shed.csv")
 DEMOGRAPHIC_FILE = os.path.join(
     os.path.dirname(__file__), "demographic/nhgis0002_ds249_20205_county.csv"
 )
@@ -210,3 +211,11 @@ def load_rent_microdata() -> pd.DataFrame:
     df_rent_microdata = pd.read_csv(RENT_MICRODATA_FILE)
 
     return df_rent_microdata
+
+
+def load_labor_shed() -> pd.DataFrame:
+    """Load Labor Shed Delineation Data"""
+
+    df_labor_shed = pd.read_csv(LABOR_SHED_FILE)
+
+    return df_labor_shed
