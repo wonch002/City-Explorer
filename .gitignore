@@ -2,6 +2,9 @@
 *.csv
 !city_explorer/datasets/cities/uscities.csv
 
+# Jupyter Notebook dev
+Untitled.ipynb
+
 # compressed pandas data
 *.parquet
 
