@@ -10,7 +10,7 @@ INCOME_MICRODATA_FILE = os.path.join(
     os.path.dirname(__file__), "income/income_microdata.csv"
 )
 RENT_MICRODATA_FILE = os.path.join(os.path.dirname(__file__), "rent/rent_microdata.csv")
-LABOR_SHED_FILE = os.path.join(os.path_dirname(__file__), "geo_regions/labor_shed.csv")
+LABOR_SHED_FILE = os.path.join(os.path.dirname(__file__), "geo_regions/labor_shed.csv")
 DEMOGRAPHIC_FILE = os.path.join(
     os.path.dirname(__file__), "demographic/nhgis0002_ds249_20205_county.csv"
 )
