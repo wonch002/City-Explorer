@@ -35,9 +35,16 @@ def load_input_data(data_cache_filepath: str = None) -> pd.DataFrame:
         df_input = pd.read_parquet(data_cache_filepath)
     else:
         df_uscities = datasets.load_uscities()
+        df_age_and_gender = datasets.load_age_and_gender_data()
 
         # Merge all datasets together
         df_input = df_uscities.copy()
+        df_input = df_input.merge(
+            right=df_age_and_gender,
+            left_on="county_fips",
+            right_on="county_fips",
+            how="left",
+        )
 
         if data_cache_filepath is not None:
 
