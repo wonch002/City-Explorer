@@ -34,12 +34,25 @@ def load_input_data(data_cache_filepath: str = None) -> pd.DataFrame:
         logger.info("Reading data from cache: %s", data_cache_filepath)
         df_input = pd.read_parquet(data_cache_filepath)
     else:
-        df_uscities  = datasets.load_uscities()
+        # Load all data
+        df_uscities = datasets.load_uscities()
         df_laborshed = datasets.load_labor_shed()
+        df_age_and_gender = datasets.load_age_and_gender_data()
 
         # Merge all datasets together
         df_input = df_uscities.copy()
-        df_input = df_input.merge(right=df_laborshed, right_on="FIPS", left_on="county_fips", how="left")
+        df_input = df_input.merge(
+            right=df_laborshed,
+            left_on="county_fips",
+            right_on="FIPS",
+            how="left",
+        )
+        df_input = df_input.merge(
+            right=df_age_and_gender,
+            left_on="county_fips",
+            right_on="county_fips",
+            how="left",
+        )
 
         if data_cache_filepath is not None:
 
