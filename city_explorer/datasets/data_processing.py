@@ -9,7 +9,8 @@ USCITIES_FILE = os.path.join(os.path.dirname(__file__), "cities/uscities.csv")
 INCOME_MICRODATA_FILE = os.path.join(
     os.path.dirname(__file__), "income/income_microdata.csv"
 )
-RENT_FILE = os.path.join(os.path.dirname(__file__), "rent/FY2023_FMR_50_county.csv")
+RENT_FILE = os.path.join(os.path.dirname(__file__), "housing/FY2023_FMR_50_county.csv")
+HOUSE_PRICES_FILE = os.path.join(os.path.dirname(__file__), "housing/house_prices.csv")
 LABOR_SHED_FILE = os.path.join(os.path.dirname(__file__), "geo_regions/labor_shed.csv")
 DEMOGRAPHIC_FILE = os.path.join(
     os.path.dirname(__file__), "demographic/nhgis0002_ds249_20205_county.csv"
@@ -283,6 +284,28 @@ def load_rent() -> pd.DataFrame:
     ]
 
     return df_rent[columns_to_keep]
+
+
+def load_house_prices() -> pd.DataFrame:
+    """Load rent dataset."""
+    df_house_prices = pd.read_csv(HOUSE_PRICES_FILE)
+
+    column_mapping = {
+        "Full County Number": "county_fips",
+        "Median Home Price 5year 2020": "home_price_5yr_median",
+        "Q1 2022": "home_price_2022_q1_median",
+    }
+    df_house_prices = df_house_prices.rename(columns=column_mapping)
+
+    # Convert current home prices to a float
+    df_house_prices["home_price_2022_q1_median"] = (
+        df_house_prices["home_price_2022_q1_median"]
+        .str.replace("$", "", regex=False)
+        .str.replace(",", "", regex=False)
+        .astype(float)
+    )
+
+    return df_house_prices[column_mapping.values()]
 
 
 def load_labor_shed() -> pd.DataFrame:
