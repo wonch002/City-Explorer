@@ -287,7 +287,7 @@ def load_rent() -> pd.DataFrame:
 
 
 def load_house_prices() -> pd.DataFrame:
-    """Load rent dataset."""
+    """Load and process dataset for house prices."""
     df_house_prices = pd.read_csv(HOUSE_PRICES_FILE)
 
     column_mapping = {
