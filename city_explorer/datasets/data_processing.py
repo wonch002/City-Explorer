@@ -305,7 +305,7 @@ def load_house_prices() -> pd.DataFrame:
         .astype(float)
     )
 
-    return df_house_prices[column_mapping.values()]
+    return df_house_prices[column_mapping.values()].dropna()
 
 
 def load_labor_shed() -> pd.DataFrame:
