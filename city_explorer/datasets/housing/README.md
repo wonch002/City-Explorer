@@ -7,7 +7,7 @@ specific location.
 ## Source
 Rental data was curated from [huduser.gov](https://www.huduser.gov/portal/datasets/50per.html).
 
-Housing data was curated from nar.realtor](https://www.nar.realtor/research-and-statistics/housing-statistics/county-median-home-prices-and-monthly-mortgage-payment)
+Housing data was curated from [nar.realtor](https://www.nar.realtor/research-and-statistics/housing-statistics/county-median-home-prices-and-monthly-mortgage-payment)
 
 
 ## Downloading the dataset
