@@ -61,7 +61,6 @@ def load_input_data(data_cache_filepath: str = None) -> pd.DataFrame:
             right_on="county_fips",
             how="left",
         )
-
         df_input = df_input.merge(
             right=df_house_prices,
             left_on="county_fips",
