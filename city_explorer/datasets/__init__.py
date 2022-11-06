@@ -8,6 +8,7 @@ from .data_processing import (
     load_uscities,
     load_income_microdata,
     load_rent,
+    load_house_prices,
     load_labor_shed,
     load_age_and_gender_data,
 )
