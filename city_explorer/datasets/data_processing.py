@@ -9,11 +9,64 @@ USCITIES_FILE = os.path.join(os.path.dirname(__file__), "cities/uscities.csv")
 INCOME_MICRODATA_FILE = os.path.join(
     os.path.dirname(__file__), "income/income_microdata.csv"
 )
-RENT_MICRODATA_FILE = os.path.join(os.path.dirname(__file__), "rent/rent_microdata.csv")
+RENT_FILE = os.path.join(os.path.dirname(__file__), "rent/FY2023_FMR_50_county.csv")
 LABOR_SHED_FILE = os.path.join(os.path.dirname(__file__), "geo_regions/labor_shed.csv")
 DEMOGRAPHIC_FILE = os.path.join(
     os.path.dirname(__file__), "demographic/nhgis0002_ds249_20205_county.csv"
 )
+
+
+def _feature_county_fips(
+    df: pd.DataFrame,
+    state_code_col: str,
+    county_code_col: str,
+) -> pd.Series:
+    """Compute the county fips code from the dataframe.
+
+    County fips is the state code + the county code. The county code must always be
+    three digits, so we pad with zero.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        A dataframe to process.
+
+    state_code_col : str
+        The column name that represents the state code.
+
+    county_code_col : str
+        The column name that represents the county code.
+
+
+    Returns
+    -------
+    pd.Series
+        A pandas series with the county code
+
+    Example
+    -------
+    If the 'state code` is 6 and the `county code` is 75, then the county fips is 6075.
+
+    >>> df["county_fips"] = _feature_county_fips(
+            df=df, state_code_col="state_code", county_code_col="county_code"
+        )
+    """
+    county_fips = (
+        (
+            df[state_code_col].astype(str)
+            + df[county_code_col]
+            .astype(str)
+            .str.pad(
+                width=3,
+                side="left",
+                fillchar="0",
+            )
+        )
+        .astype(int)
+        .rename("county_fips")
+    )
+
+    return county_fips
 
 
 def load_uscities() -> pd.DataFrame:
@@ -31,16 +84,9 @@ def load_age_and_gender_data() -> pd.DataFrame:
     df_demographic = pd.read_csv(DEMOGRAPHIC_FILE)
 
     # County fips is STATE_CODE + COUNTY_CODE (always 3 digits)
-    df_demographic["county_fips"] = (
-        df_demographic["STATEA"].astype(str)
-        + df_demographic["COUNTYA"]
-        .astype(str)
-        .str.pad(
-            width=3,
-            side="left",
-            fillchar="0",
-        )
-    ).astype(int)
+    df_demographic["county_fips"] = _feature_county_fips(
+        df=df_demographic, state_code_col="STATEA", county_code_col="COUNTYA"
+    )
 
     column_mappings = {
         "AMPKE001": "Total",
@@ -206,11 +252,37 @@ def load_income_microdata() -> pd.DataFrame:
     return df_income_microdata
 
 
-def load_rent_microdata() -> pd.DataFrame:
-    """Load microdata for rent."""
-    df_rent_microdata = pd.read_csv(RENT_MICRODATA_FILE)
+def load_rent() -> pd.DataFrame:
+    """Load rent dataset."""
+    df_rent = pd.read_csv(RENT_FILE)
 
-    return df_rent_microdata
+    df_rent["county_fips"] = _feature_county_fips(
+        df_rent, state_code_col="state_code", county_code_col="county_code"
+    )
+
+    # Compute average rent. These values are the 50th percentile, so we are taking the
+    # average of the four medians.
+    df_rent["rent_50_avg"] = df_rent[
+        [
+            "rent_50_0",
+            "rent_50_1",
+            "rent_50_2",
+            "rent_50_3",
+            "rent_50_4",
+        ]
+    ].mean(axis=1)
+
+    columns_to_keep = [
+        "county_fips",
+        "rent_50_avg",
+        "rent_50_0",
+        "rent_50_1",
+        "rent_50_2",
+        "rent_50_3",
+        "rent_50_4",
+    ]
+
+    return df_rent[columns_to_keep]
 
 
 def load_labor_shed() -> pd.DataFrame:
