@@ -1,1 +1,6 @@
 pandas
+plotly
+plotly-geo
+geopandas
+pyshp
+shapely
