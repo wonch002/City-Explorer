@@ -10,7 +10,10 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-def load_input_data(data_cache_filepath: str = None) -> pd.DataFrame:
+def load_input_data(
+    occupation_title: str = "All Occupations",
+    data_cache_filepath: str = None,
+) -> pd.DataFrame:
     """Load all available data into a single DataFrame.
 
     Parameters
@@ -39,6 +42,7 @@ def load_input_data(data_cache_filepath: str = None) -> pd.DataFrame:
         df_laborshed = datasets.load_labor_shed()
         df_age_and_gender = datasets.load_age_and_gender_data()
         df_rent = datasets.load_rent()
+        df_income = datasets.load_income(occupation_title=occupation_title)
         df_house_prices = datasets.load_house_prices()
 
         # Merge all datasets together
@@ -62,6 +66,12 @@ def load_input_data(data_cache_filepath: str = None) -> pd.DataFrame:
             how="inner",
         )
         df_input = df_input.merge(
+            right=df_income,
+            left_on="county_fips",
+            right_on="county_fips",
+            how="inner",
+        )
+        df_input = df_input.merge(
             right=df_house_prices,
             left_on="county_fips",
             right_on="county_fips",
@@ -69,7 +79,6 @@ def load_input_data(data_cache_filepath: str = None) -> pd.DataFrame:
         )
 
         if data_cache_filepath is not None:
-
             dirname = os.path.dirname(data_cache_filepath)
             if not os.path.exists(dirname):
                 os.makedirs(dirname)
