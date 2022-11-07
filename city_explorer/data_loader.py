@@ -18,6 +18,10 @@ def load_input_data(
 
     Parameters
     ----------
+    occupation_title : str, optional
+        The title of the occupation to load the income data for. Default is
+        'All Occupations'. Pass "help" to display all possible values.
+
     data_cache_filepath : str, optional
         The name of a file to save/load your data extract from. Default behavior is
         None.
@@ -27,6 +31,12 @@ def load_input_data(
     pd.DataFrame
         Dataset with all available data.
     """
+    if occupation_title == "help":
+        unique_occupations = datasets.unique_occupations(format=True)
+        formatted_help_msg = "\n" + "\n".join(unique_occupations)
+        logger.info(formatted_help_msg)
+        return
+
     if data_cache_filepath is not None:
         data_cache_filepath = os.path.join(
             datasets.CACHE_FOLDER,

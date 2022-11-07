@@ -2,6 +2,7 @@
 import os
 
 import pandas as pd
+import numpy as np
 from sklearn.neighbors import NearestNeighbors
 
 
@@ -263,6 +264,32 @@ def load_age_and_gender_data() -> pd.DataFrame:
     return df_demographic[columns_to_keep]
 
 
+def unique_occupations(format: bool = False) -> np.ndarray:
+    """Return all unique occuptions."""
+    df_income = pd.read_csv(INCOME_FILE)
+    unique_occupations = df_income[["OCC_TITLE", "OCC_CODE"]].drop_duplicates()
+    unique_occupations["OCC_CODE"] = (
+        unique_occupations["OCC_CODE"].str.replace("-", "").astype(int)
+    )
+    unique_occupations = unique_occupations.sort_values("OCC_CODE")
+
+    if format:
+        unique_occupations = unique_occupations.to_numpy()
+        occupations = []
+        for occupation in unique_occupations:
+            if occupation[1] == 0:
+                occupations.append(occupation[0])
+            elif str(occupation[1]).endswith("0000"):
+                occupations.append("\t" + occupation[0])
+            else:
+                occupations.append("\t\t" + occupation[0])
+
+    else:
+        occupations = unique_occupations["OCC_TITLE"].to_numpy()
+
+    return occupations
+
+
 def load_income(occupation_title: str = "All Occupations") -> pd.DataFrame:
     """Load and process dataset for income.
 
@@ -304,13 +331,15 @@ def load_income(occupation_title: str = "All Occupations") -> pd.DataFrame:
     df_income = pd.read_csv(INCOME_FILE)
 
     # Filter on the occupation title
-    unique_occupations = sorted(df_income["OCC_TITLE"].unique())
-    if occupation_title not in unique_occupations:
-        unique_occupations_formatted = "\n\t".join(unique_occupations)
+    all_occupations = unique_occupations()
+
+    if occupation_title not in all_occupations:
+        formatted_occupations = unique_occupations(format=True)
+        formatted_help_msg = "\n" + "\n".join(formatted_occupations)
         raise ValueError(
             f"`{occupation_title}` is not a valid occupation. "
             + "Please select an occupation from the following list:\n"
-            + f"\t{unique_occupations_formatted}"
+            + f"\t{formatted_help_msg}"
         )
 
     # Filter to the requested occupation
