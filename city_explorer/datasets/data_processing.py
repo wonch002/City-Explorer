@@ -264,8 +264,23 @@ def load_age_and_gender_data() -> pd.DataFrame:
 
 
 def load_income(occupation_title: str = "All Occupations") -> pd.DataFrame:
-    """Load data for income."""
-    # Load mapping between csbsa code and county fips
+    """Load and process dataset for income.
+
+    Processing of income data includes imputing missing income with the average income
+    values of the three nearest counties.
+
+    Parameters
+    ----------
+    occupation_title : str, optional
+        The title of the occupation to load the income data for. Default is
+        'All Occupations'.
+
+    Returns
+    -------
+    pd.DataFrame
+        A dataframe with associated income data at the county level.
+    """
+    # Load mapping between cbsa code and county fips
     df_cbsa_to_county_mapping = pd.read_csv(CBSA_TO_COUNTYFIPS_FILE).rename(
         columns={"CBSA Code": "msa_code"}
     )[["msa_code", "FIPS State Code", "FIPS County Code"]]
@@ -325,7 +340,8 @@ def load_income(occupation_title: str = "All Occupations") -> pd.DataFrame:
     ]
 
     df_income_filtered = df_income_filtered[columns_to_keep]
-    # process all columns
+
+    # Process all columns
     for col in columns_to_keep:
         if col != "county_fips":
             # *  = indicates that a wage estimate is not available
@@ -345,11 +361,11 @@ def load_income(occupation_title: str = "All Occupations") -> pd.DataFrame:
                 df_income_filtered[col].str.replace(",", "").astype(float)
             )
 
-    # Collapse duplicated counties into their mean b/c the mapping from
+    # Collapse duplicated counties into their mean. This happens b/c the mapping from
     # msa_code -> county_fips is not neccessarily 1:1
     df_income_filtered = df_income_filtered.groupby("county_fips").mean().reset_index()
 
-    # County coordinates
+    # Impute missing income with the average of the 3 nearest counties
     df_county_coordinates = _county_coordinates()
     income_is_known = df_county_coordinates["county_fips"].isin(
         df_income_filtered["county_fips"]
@@ -359,11 +375,12 @@ def load_income(occupation_title: str = "All Occupations") -> pd.DataFrame:
         ~income_is_known
     ].reset_index()
 
-    # Impute missing income with the average of the 3 nearest counties
+    # Fit a nearestneighbors model with our known income, so we can look them up
     neighbors_model = NearestNeighbors(n_neighbors=3, metric="haversine")
     neighbors_model.fit(df_coords_income_known[["lat", "lng"]])
-    _, indices = neighbors_model.kneighbors(df_coords_income_not_known[["lat", "lng"]])
 
+    # For all unknown incomes, impute a new income
+    _, indices = neighbors_model.kneighbors(df_coords_income_not_known[["lat", "lng"]])
     all_imputed_incomes = []
     for i, matching_indices in enumerate(indices):
         matching_counties = df_coords_income_known.iloc[matching_indices]["county_fips"]
@@ -380,8 +397,9 @@ def load_income(occupation_title: str = "All Occupations") -> pd.DataFrame:
         )
 
         all_imputed_incomes.append(imputed_income)
-
     df_all_imputed_incomes = pd.DataFrame(all_imputed_incomes)
+
+    # Finally, combine the imputed incomes with the actual incomes
     df_income_combined = pd.concat([df_income_filtered, df_all_imputed_incomes])
 
     return df_income_combined
