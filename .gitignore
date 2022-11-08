@@ -3,6 +3,7 @@
 *.xlsx
 *.xls
 !city_explorer/datasets/cities/uscities.csv
+cache
 
 # Jupyter Notebook dev
 *.ipynb
