@@ -1,6 +1,6 @@
 # Datasets
 
-Documentation for all of our datasets.
+Documentation for all of our datasets. A zipped file should always live on Microsoft Teams `Teams -> CSE6242 Group Project -> General -> Files -> Datasets -> data.zip`. Download, and add to this folder. 
 
 
 ## Cities
