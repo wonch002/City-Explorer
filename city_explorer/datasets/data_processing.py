@@ -7,20 +7,25 @@ from sklearn.neighbors import NearestNeighbors
 
 
 # Definitions for filepaths to datasets
-USCITIES_FILE = os.path.join(os.path.dirname(__file__), "cities/uscities.csv")
-CBSA_TO_COUNTYFIPS_FILE = os.path.join(
-    os.path.dirname(__file__), "income/cbsa_to_countyfips.csv"
-)
-NECTA_TO_COUNTYFIPS_FILE = os.path.join(
-    os.path.dirname(__file__), "income/necta_to_countyfips.csv"
-)
-INCOME_FILE = os.path.join(os.path.dirname(__file__), "income/MSA_M2021_dl.csv")
-RENT_FILE = os.path.join(os.path.dirname(__file__), "housing/FY2023_FMR_50_county.csv")
-HOUSE_PRICES_FILE = os.path.join(os.path.dirname(__file__), "housing/house_prices.csv")
-LABOR_SHED_FILE = os.path.join(os.path.dirname(__file__), "geo_regions/labor_shed.csv")
-DEMOGRAPHIC_FILE = os.path.join(
-    os.path.dirname(__file__), "demographic/nhgis0002_ds249_20205_county.csv"
-)
+DATAPATH = os.path.join(os.path.dirname(__file__), "data")
+
+# All uscities
+USCITIES_FILE = os.path.join(DATAPATH, "uscities.csv")
+
+# Income
+CBSA_TO_COUNTYFIPS_FILE = os.path.join(DATAPATH, "cbsa_to_countyfips.csv")
+NECTA_TO_COUNTYFIPS_FILE = os.path.join(DATAPATH, "necta_to_countyfips.csv")
+INCOME_FILE = os.path.join(DATAPATH, "MSA_M2021_dl.csv")
+
+# Rental
+RENT_FILE = os.path.join(DATAPATH, "FY2023_FMR_50_county.csv")
+HOUSE_PRICES_FILE = os.path.join(DATAPATH, "house_prices.csv")
+
+# Laborshed
+LABOR_SHED_FILE = os.path.join(DATAPATH, "labor_shed.csv")
+
+# Demographic
+DEMOGRAPHIC_FILE = os.path.join(DATAPATH, "nhgis0002_ds249_20205_county.csv")
 
 
 def _feature_county_fips(
