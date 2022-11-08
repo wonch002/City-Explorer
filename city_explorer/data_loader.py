@@ -10,11 +10,18 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-def load_input_data(data_cache_filepath: str = None) -> pd.DataFrame:
+def load_input_data(
+    occupation_title: str = "All Occupations",
+    data_cache_filepath: str = None,
+) -> pd.DataFrame:
     """Load all available data into a single DataFrame.
 
     Parameters
     ----------
+    occupation_title : str, optional
+        The title of the occupation to load the income data for. Default is
+        'All Occupations'. Pass "help" to display all possible values.
+
     data_cache_filepath : str, optional
         The name of a file to save/load your data extract from. Default behavior is
         None.
@@ -24,6 +31,12 @@ def load_input_data(data_cache_filepath: str = None) -> pd.DataFrame:
     pd.DataFrame
         Dataset with all available data.
     """
+    if occupation_title == "help":
+        unique_occupations = datasets.unique_occupations(format=True)
+        formatted_help_msg = "\n" + "\n".join(unique_occupations)
+        logger.info(formatted_help_msg)
+        return
+
     if data_cache_filepath is not None:
         data_cache_filepath = os.path.join(
             datasets.CACHE_FOLDER,
@@ -39,6 +52,7 @@ def load_input_data(data_cache_filepath: str = None) -> pd.DataFrame:
         df_laborshed = datasets.load_labor_shed()
         df_age_and_gender = datasets.load_age_and_gender_data()
         df_rent = datasets.load_rent()
+        df_income = datasets.load_income(occupation_title=occupation_title)
         df_house_prices = datasets.load_house_prices()
 
         # Merge all datasets together
@@ -62,6 +76,12 @@ def load_input_data(data_cache_filepath: str = None) -> pd.DataFrame:
             how="inner",
         )
         df_input = df_input.merge(
+            right=df_income,
+            left_on="county_fips",
+            right_on="county_fips",
+            how="inner",
+        )
+        df_input = df_input.merge(
             right=df_house_prices,
             left_on="county_fips",
             right_on="county_fips",
@@ -69,7 +89,6 @@ def load_input_data(data_cache_filepath: str = None) -> pd.DataFrame:
         )
 
         if data_cache_filepath is not None:
-
             dirname = os.path.dirname(data_cache_filepath)
             if not os.path.exists(dirname):
                 os.makedirs(dirname)

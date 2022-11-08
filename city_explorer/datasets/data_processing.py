@@ -2,19 +2,30 @@
 import os
 
 import pandas as pd
+import numpy as np
+from sklearn.neighbors import NearestNeighbors
 
 
 # Definitions for filepaths to datasets
-USCITIES_FILE = os.path.join(os.path.dirname(__file__), "cities/uscities.csv")
-INCOME_MICRODATA_FILE = os.path.join(
-    os.path.dirname(__file__), "income/income_microdata.csv"
-)
-RENT_FILE = os.path.join(os.path.dirname(__file__), "housing/FY2023_FMR_50_county.csv")
-HOUSE_PRICES_FILE = os.path.join(os.path.dirname(__file__), "housing/house_prices.csv")
-LABOR_SHED_FILE = os.path.join(os.path.dirname(__file__), "geo_regions/labor_shed.csv")
-DEMOGRAPHIC_FILE = os.path.join(
-    os.path.dirname(__file__), "demographic/nhgis0002_ds249_20205_county.csv"
-)
+DATAPATH = os.path.join(os.path.dirname(__file__), "data")
+
+# All uscities
+USCITIES_FILE = os.path.join(DATAPATH, "uscities.csv")
+
+# Income
+CBSA_TO_COUNTYFIPS_FILE = os.path.join(DATAPATH, "cbsa_to_countyfips.csv")
+NECTA_TO_COUNTYFIPS_FILE = os.path.join(DATAPATH, "necta_to_countyfips.csv")
+INCOME_FILE = os.path.join(DATAPATH, "MSA_M2021_dl.csv")
+
+# Rental
+RENT_FILE = os.path.join(DATAPATH, "FY2023_FMR_50_county.csv")
+HOUSE_PRICES_FILE = os.path.join(DATAPATH, "house_prices.csv")
+
+# Laborshed
+LABOR_SHED_FILE = os.path.join(DATAPATH, "labor_shed.csv")
+
+# Demographic
+DEMOGRAPHIC_FILE = os.path.join(DATAPATH, "nhgis0002_ds249_20205_county.csv")
 
 
 def _feature_county_fips(
@@ -68,6 +79,18 @@ def _feature_county_fips(
     )
 
     return county_fips
+
+
+def _county_coordinates():
+    """Return the longitude and latitude coordinates of each county."""
+    df_uscities = load_uscities()
+    # Group each city by their county and get the center point (long and lat)
+    # https://laracasts.com/discuss/channels/laravel/calculating-center-point-using-geo-latitude-and-longitude-values
+    county_coordinates = (
+        df_uscities.groupby("county_fips").mean()[["lng", "lat"]].reset_index()
+    )
+
+    return county_coordinates
 
 
 def load_uscities() -> pd.DataFrame:
@@ -246,11 +269,174 @@ def load_age_and_gender_data() -> pd.DataFrame:
     return df_demographic[columns_to_keep]
 
 
-def load_income_microdata() -> pd.DataFrame:
-    """Load microdata for income."""
-    df_income_microdata = pd.read_csv(INCOME_MICRODATA_FILE)
+def unique_occupations(format: bool = False) -> np.ndarray:
+    """Return all unique occuptions."""
+    df_income = pd.read_csv(INCOME_FILE)
+    unique_occupations = df_income[["OCC_TITLE", "OCC_CODE"]].drop_duplicates()
+    unique_occupations["OCC_CODE"] = (
+        unique_occupations["OCC_CODE"].str.replace("-", "").astype(int)
+    )
+    unique_occupations = unique_occupations.sort_values("OCC_CODE")
 
-    return df_income_microdata
+    if format:
+        unique_occupations = unique_occupations.to_numpy()
+        occupations = []
+        for occupation in unique_occupations:
+            if occupation[1] == 0:
+                occupations.append(occupation[0])
+            elif str(occupation[1]).endswith("0000"):
+                occupations.append("\t" + occupation[0])
+            else:
+                occupations.append("\t\t" + occupation[0])
+
+    else:
+        occupations = unique_occupations["OCC_TITLE"].to_numpy()
+
+    return occupations
+
+
+def load_income(occupation_title: str = "All Occupations") -> pd.DataFrame:
+    """Load and process dataset for income.
+
+    Processing of income data includes imputing missing income with the average income
+    values of the three nearest counties.
+
+    Parameters
+    ----------
+    occupation_title : str, optional
+        The title of the occupation to load the income data for. Default is
+        'All Occupations'.
+
+    Returns
+    -------
+    pd.DataFrame
+        A dataframe with associated income data at the county level.
+    """
+    # Load mapping between cbsa code and county fips
+    df_cbsa_to_county_mapping = pd.read_csv(CBSA_TO_COUNTYFIPS_FILE).rename(
+        columns={"CBSA Code": "msa_code"}
+    )[["msa_code", "FIPS State Code", "FIPS County Code"]]
+    df_necta_to_county_mapping = pd.read_csv(NECTA_TO_COUNTYFIPS_FILE).rename(
+        columns={"NECTA Code": "msa_code"}
+    )[["msa_code", "FIPS State Code", "FIPS County Code"]]
+
+    df_county_mapping = (
+        pd.concat([df_cbsa_to_county_mapping, df_necta_to_county_mapping])
+        .dropna()
+        .astype(int)
+    )
+
+    df_county_mapping["county_fips"] = _feature_county_fips(
+        df=df_county_mapping,
+        state_code_col="FIPS State Code",
+        county_code_col="FIPS County Code",
+    )
+
+    # Load income dataset and merge country fips
+    df_income = pd.read_csv(INCOME_FILE)
+
+    # Filter on the occupation title
+    all_occupations = unique_occupations()
+
+    if occupation_title not in all_occupations:
+        formatted_occupations = unique_occupations(format=True)
+        formatted_help_msg = "\n" + "\n".join(formatted_occupations)
+        raise ValueError(
+            f"`{occupation_title}` is not a valid occupation. "
+            + "Please select an occupation from the following list:\n"
+            + f"\t{formatted_help_msg}"
+        )
+
+    # Filter to the requested occupation
+    is_occupation = df_income["OCC_TITLE"] == occupation_title
+    df_income_filtered = df_income.loc[is_occupation]
+    df_income_filtered = df_income_filtered.merge(
+        df_county_mapping,
+        left_on="AREA",
+        right_on="msa_code",
+        how="inner",
+    )
+
+    columns_to_keep = [
+        "county_fips",
+        "H_MEAN",
+        "A_MEAN",
+        "H_PCT10",
+        "H_PCT25",
+        "H_MEDIAN",
+        "H_PCT75",
+        "H_PCT90",
+        "A_PCT10",
+        "A_PCT25",
+        "A_MEDIAN",
+        "A_PCT75",
+        "A_PCT90",
+    ]
+
+    df_income_filtered = df_income_filtered[columns_to_keep]
+
+    # Process all columns
+    for col in columns_to_keep:
+        if col != "county_fips":
+            # *  = indicates that a wage estimate is not available
+            # **  = indicates that an employment estimate is not available
+            df_income_filtered = df_income_filtered[
+                ~df_income_filtered[col].isin(["*", "**"])
+            ]
+
+            # "#  = indicates a wage equal to or greater than $100.00 per hour or
+            # $208,000 per year ",,,,
+            replace_value = "100.00" if col.startswith("H") else "208,000"
+            df_income_filtered[col] = (
+                df_income_filtered[col].astype(str).replace("#", replace_value)
+            )
+
+            df_income_filtered[col] = (
+                df_income_filtered[col].str.replace(",", "").astype(float)
+            )
+
+    # Collapse duplicated counties into their mean. This happens b/c the mapping from
+    # msa_code -> county_fips is not neccessarily 1:1
+    df_income_filtered = df_income_filtered.groupby("county_fips").mean().reset_index()
+
+    # Impute missing income with the average of the 3 nearest counties
+    df_county_coordinates = _county_coordinates()
+    income_is_known = df_county_coordinates["county_fips"].isin(
+        df_income_filtered["county_fips"]
+    )
+    df_coords_income_known = df_county_coordinates.loc[income_is_known].reset_index()
+    df_coords_income_not_known = df_county_coordinates.loc[
+        ~income_is_known
+    ].reset_index()
+
+    # Fit a nearestneighbors model with our known income, so we can look them up
+    neighbors_model = NearestNeighbors(n_neighbors=3, metric="haversine")
+    neighbors_model.fit(df_coords_income_known[["lat", "lng"]])
+
+    # For all unknown incomes, impute a new income
+    _, indices = neighbors_model.kneighbors(df_coords_income_not_known[["lat", "lng"]])
+    all_imputed_incomes = []
+    for i, matching_indices in enumerate(indices):
+        matching_counties = df_coords_income_known.iloc[matching_indices]["county_fips"]
+        imputed_income = (
+            df_income_filtered[
+                df_income_filtered["county_fips"].isin(matching_counties)
+            ]
+            .drop(["county_fips"], axis=1)
+            .mean()
+        ).to_dict()
+
+        imputed_income["county_fips"] = int(
+            df_coords_income_not_known.iloc[i]["county_fips"]
+        )
+
+        all_imputed_incomes.append(imputed_income)
+    df_all_imputed_incomes = pd.DataFrame(all_imputed_incomes)
+
+    # Finally, combine the imputed incomes with the actual incomes
+    df_income_combined = pd.concat([df_income_filtered, df_all_imputed_incomes])
+
+    return df_income_combined
 
 
 def load_rent() -> pd.DataFrame:

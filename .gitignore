@@ -1,6 +1,9 @@
 # Ignore all CSV files except for the cities CSV
 *.csv
+*.xlsx
+*.xls
 !city_explorer/datasets/cities/uscities.csv
+cache
 
 # Jupyter Notebook dev
 *.ipynb
@@ -59,4 +62,3 @@ migrated
 .vscode/.ropeproject
 ~POC_Dashboard__27324.twbr
 .idea
-*.xlsx
