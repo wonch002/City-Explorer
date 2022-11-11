@@ -27,55 +27,51 @@ LABOR_SHED_FILE = os.path.join(DATAPATH, "labor_shed.csv")
 # Demographic
 DEMOGRAPHIC_FILE = os.path.join(DATAPATH, "nhgis0002_ds249_20205_county.csv")
 
+# Climate
+CLIMATE_FILE = os.path.join(DATAPATH, "climate.csv")
+
+
 
 def _feature_county_fips(
-    df: pd.DataFrame,
-    state_code_col: str,
-    county_code_col: str,
+        df: pd.DataFrame,
+        state_code_col: str,
+        county_code_col: str,
 ) -> pd.Series:
     """Compute the county fips code from the dataframe.
-
     County fips is the state code + the county code. The county code must always be
     three digits, so we pad with zero.
-
     Parameters
     ----------
     df : pd.DataFrame
         A dataframe to process.
-
     state_code_col : str
         The column name that represents the state code.
-
     county_code_col : str
         The column name that represents the county code.
-
-
     Returns
     -------
     pd.Series
         A pandas series with the county code
-
     Example
     -------
     If the 'state code` is 6 and the `county code` is 75, then the county fips is 6075.
-
     >>> df["county_fips"] = _feature_county_fips(
             df=df, state_code_col="state_code", county_code_col="county_code"
         )
     """
     county_fips = (
         (
-            df[state_code_col].astype(str)
-            + df[county_code_col]
-            .astype(str)
-            .str.pad(
-                width=3,
-                side="left",
-                fillchar="0",
-            )
+                df[state_code_col].astype(str)
+                + df[county_code_col]
+                .astype(str)
+                .str.pad(
+            width=3,
+            side="left",
+            fillchar="0",
         )
-        .astype(int)
-        .rename("county_fips")
+        )
+            .astype(int)
+            .rename("county_fips")
     )
 
     return county_fips
@@ -101,6 +97,14 @@ def load_uscities() -> pd.DataFrame:
     df_uscities["zips"] = df_uscities["zips"].str.split(" ")
 
     return df_uscities
+
+def load_climate_date() -> pd.DataFrame:
+    """Load and process us climate data."""
+    df = pd.read_csv(CLIMATE_FILE)
+
+    df = df[~ df.Jan_max_temp == 999]
+
+    return df
 
 
 def load_age_and_gender_data() -> pd.DataFrame:
@@ -168,91 +172,91 @@ def load_age_and_gender_data() -> pd.DataFrame:
 
     # Relevant age variables
     df_demographic["count_under_10"] = (
-        df_demographic["Male: Under 5 years"]
-        + df_demographic["Male: 5 to 9 years"]
-        + df_demographic["Female: Under 5 years"]
-        + df_demographic["Female: 5 to 9 years"]
+            df_demographic["Male: Under 5 years"]
+            + df_demographic["Male: 5 to 9 years"]
+            + df_demographic["Female: Under 5 years"]
+            + df_demographic["Female: 5 to 9 years"]
     )
 
     df_demographic["count_10_to_20"] = (
-        df_demographic["Male: 10 to 14 years"]
-        + df_demographic["Male: 15 to 17 years"]
-        + df_demographic["Male: 18 and 19 years"]
-        + df_demographic["Female: 10 to 14 years"]
-        + df_demographic["Female: 15 to 17 years"]
-        + df_demographic["Female: 18 and 19 years"]
+            df_demographic["Male: 10 to 14 years"]
+            + df_demographic["Male: 15 to 17 years"]
+            + df_demographic["Male: 18 and 19 years"]
+            + df_demographic["Female: 10 to 14 years"]
+            + df_demographic["Female: 15 to 17 years"]
+            + df_demographic["Female: 18 and 19 years"]
     )
 
     df_demographic["count_20_to_30"] = (
-        df_demographic["Male: 20 years"]
-        + df_demographic["Male: 21 years"]
-        + df_demographic["Male: 22 to 24 years"]
-        + df_demographic["Male: 25 to 29 years"]
-        + df_demographic["Female: 20 years"]
-        + df_demographic["Female: 21 years"]
-        + df_demographic["Female: 22 to 24 years"]
-        + df_demographic["Female: 25 to 29 years"]
+            df_demographic["Male: 20 years"]
+            + df_demographic["Male: 21 years"]
+            + df_demographic["Male: 22 to 24 years"]
+            + df_demographic["Male: 25 to 29 years"]
+            + df_demographic["Female: 20 years"]
+            + df_demographic["Female: 21 years"]
+            + df_demographic["Female: 22 to 24 years"]
+            + df_demographic["Female: 25 to 29 years"]
     )
 
     df_demographic["count_30_to_50"] = (
-        df_demographic["Male: 30 to 34 years"]
-        + df_demographic["Male: 35 to 39 years"]
-        + df_demographic["Male: 40 to 44 years"]
-        + df_demographic["Male: 45 to 49 years"]
-        + df_demographic["Female: 30 to 34 years"]
-        + df_demographic["Female: 35 to 39 years"]
-        + df_demographic["Female: 40 to 44 years"]
-        + df_demographic["Female: 45 to 49 years"]
+            df_demographic["Male: 30 to 34 years"]
+            + df_demographic["Male: 35 to 39 years"]
+            + df_demographic["Male: 40 to 44 years"]
+            + df_demographic["Male: 45 to 49 years"]
+            + df_demographic["Female: 30 to 34 years"]
+            + df_demographic["Female: 35 to 39 years"]
+            + df_demographic["Female: 40 to 44 years"]
+            + df_demographic["Female: 45 to 49 years"]
     )
 
     df_demographic["count_50_to_65"] = (
-        df_demographic["Male: 50 to 54 years"]
-        + df_demographic["Male: 55 to 59 years"]
-        + df_demographic["Male: 60 and 61 years"]
-        + df_demographic["Male: 62 to 64 years"]
-        + df_demographic["Female: 50 to 54 years"]
-        + df_demographic["Female: 55 to 59 years"]
-        + df_demographic["Female: 60 and 61 years"]
-        + df_demographic["Female: 62 to 64 years"]
+            df_demographic["Male: 50 to 54 years"]
+            + df_demographic["Male: 55 to 59 years"]
+            + df_demographic["Male: 60 and 61 years"]
+            + df_demographic["Male: 62 to 64 years"]
+            + df_demographic["Female: 50 to 54 years"]
+            + df_demographic["Female: 55 to 59 years"]
+            + df_demographic["Female: 60 and 61 years"]
+            + df_demographic["Female: 62 to 64 years"]
     )
 
     df_demographic["count_over_65"] = (
-        df_demographic["Male: 65 and 66 years"]
-        + df_demographic["Male: 67 to 69 years"]
-        + df_demographic["Male: 70 to 74 years"]
-        + df_demographic["Male: 75 to 79 years"]
-        + df_demographic["Male: 80 to 84 years"]
-        + df_demographic["Male: 85 years and over"]
-        + df_demographic["Female: 65 and 66 years"]
-        + df_demographic["Female: 67 to 69 years"]
-        + df_demographic["Female: 70 to 74 years"]
-        + df_demographic["Female: 75 to 79 years"]
-        + df_demographic["Female: 80 to 84 years"]
-        + df_demographic["Female: 85 years and over"]
+            df_demographic["Male: 65 and 66 years"]
+            + df_demographic["Male: 67 to 69 years"]
+            + df_demographic["Male: 70 to 74 years"]
+            + df_demographic["Male: 75 to 79 years"]
+            + df_demographic["Male: 80 to 84 years"]
+            + df_demographic["Male: 85 years and over"]
+            + df_demographic["Female: 65 and 66 years"]
+            + df_demographic["Female: 67 to 69 years"]
+            + df_demographic["Female: 70 to 74 years"]
+            + df_demographic["Female: 75 to 79 years"]
+            + df_demographic["Female: 80 to 84 years"]
+            + df_demographic["Female: 85 years and over"]
     )
 
     # Compute relevant percentages
     df_demographic["percent_male"] = df_demographic["Male"] / df_demographic["Total"]
     df_demographic["percent_female"] = (
-        df_demographic["Female"] / df_demographic["Total"]
+            df_demographic["Female"] / df_demographic["Total"]
     )
     df_demographic["percent_under_10"] = (
-        df_demographic["count_under_10"] / df_demographic["Total"]
+            df_demographic["count_under_10"] / df_demographic["Total"]
     )
     df_demographic["percent_10_to_20"] = (
-        df_demographic["count_10_to_20"] / df_demographic["Total"]
+            df_demographic["count_10_to_20"] / df_demographic["Total"]
     )
     df_demographic["percent_20_to_30"] = (
-        df_demographic["count_20_to_30"] / df_demographic["Total"]
+            df_demographic["count_20_to_30"] / df_demographic["Total"]
     )
     df_demographic["percent_30_to_50"] = (
-        df_demographic["count_30_to_50"] / df_demographic["Total"]
+            df_demographic["count_30_to_50"] / df_demographic["Total"]
     )
     df_demographic["percent_50_to_65"] = (
-        df_demographic["count_50_to_65"] / df_demographic["Total"]
+            df_demographic["count_50_to_65"] / df_demographic["Total"]
     )
     df_demographic["percent_over_65"] = (
-        df_demographic["count_over_65"] / df_demographic["Total"]
+            df_demographic["count_over_65"] / df_demographic["Total"]
     )
 
     columns_to_keep = [
@@ -297,16 +301,13 @@ def unique_occupations(format: bool = False) -> np.ndarray:
 
 def load_income(occupation_title: str = "All Occupations") -> pd.DataFrame:
     """Load and process dataset for income.
-
     Processing of income data includes imputing missing income with the average income
     values of the three nearest counties.
-
     Parameters
     ----------
     occupation_title : str, optional
         The title of the occupation to load the income data for. Default is
         'All Occupations'.
-
     Returns
     -------
     pd.DataFrame
@@ -322,8 +323,8 @@ def load_income(occupation_title: str = "All Occupations") -> pd.DataFrame:
 
     df_county_mapping = (
         pd.concat([df_cbsa_to_county_mapping, df_necta_to_county_mapping])
-        .dropna()
-        .astype(int)
+            .dropna()
+            .astype(int)
     )
 
     df_county_mapping["county_fips"] = _feature_county_fips(
@@ -422,8 +423,8 @@ def load_income(occupation_title: str = "All Occupations") -> pd.DataFrame:
             df_income_filtered[
                 df_income_filtered["county_fips"].isin(matching_counties)
             ]
-            .drop(["county_fips"], axis=1)
-            .mean()
+                .drop(["county_fips"], axis=1)
+                .mean()
         ).to_dict()
 
         imputed_income["county_fips"] = int(
@@ -486,9 +487,9 @@ def load_house_prices() -> pd.DataFrame:
     # Convert current home prices to a float
     df_house_prices["home_price_2022_q1_median"] = (
         df_house_prices["home_price_2022_q1_median"]
-        .str.replace("$", "", regex=False)
-        .str.replace(",", "", regex=False)
-        .astype(float)
+            .str.replace("$", "", regex=False)
+            .str.replace(",", "", regex=False)
+            .astype(float)
     )
 
     return df_house_prices[column_mapping.values()].dropna()
