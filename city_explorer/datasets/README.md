@@ -77,5 +77,10 @@ This data is used to understand the political leanings of each city.
 
 Data is from ???
 
+## Climate 
+This data is used to understand the climate and weather information of cities.  
+
+Data is from archive-api.open-meteo.com
+
 
 
