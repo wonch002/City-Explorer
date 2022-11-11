@@ -1,0 +1,889 @@
+NECTA Code,NECTA Division Code,Combined NECTA Code,NECTA Title,Metropolitan/Micropolitan NECTA,NECTA Division Title,Combined NECTA Title,City or Town Name,FIPS State Code,FIPS County Code,FIPS County Subdivision Code
+70450,,715,"Athol, MA",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Orange town,25,011,51265
+70450,,715,"Athol, MA",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Warwick town,25,011,73265
+70450,,715,"Athol, MA",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Athol town,25,027,02480
+70450,,715,"Athol, MA",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Royalston town,25,027,58580
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Augusta city,23,011,02100
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Belgrade town,23,011,04020
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Chelsea town,23,011,12350
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",China town,23,011,12735
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Farmingdale town,23,011,24670
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Gardiner city,23,011,27085
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Hallowell city,23,011,30550
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Manchester town,23,011,43080
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Mount Vernon town,23,011,47770
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Pittston town,23,011,59110
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Randolph town,23,011,61700
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Readfield town,23,011,62190
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Rome town,23,011,63835
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Sidney town,23,011,68385
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Vassalboro town,23,011,78745
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",West Gardiner town,23,011,82945
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Windsor town,23,011,86165
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Winthrop town,23,011,86970
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Somerville town,23,015,69645
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Whitefield town,23,015,85010
+70600,,710,"Augusta, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Palermo town,23,027,56450
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Amherst town,23,009,01185
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Aurora town,23,009,02165
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Dedham town,23,009,16935
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Alton town,23,019,01115
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Argyle unorganized territory,23,019,01500
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Bangor city,23,019,02795
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Bradford town,23,019,06575
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Bradley town,23,019,06680
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Brewer city,23,019,06925
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Burlington town,23,019,09200
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Carmel town,23,019,10670
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Charleston town,23,019,12105
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Clifton town,23,019,13365
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Corinna town,23,019,14310
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Corinth town,23,019,14380
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Dixmont town,23,019,17950
+70750,,,"Bangor, ME",Metropolitan NECTA,,,East Central Penobscot unorganized territory,23,019,19868
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Eddington town,23,019,22535
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Edinburg town,23,019,22710
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Enfield town,23,019,23620
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Etna town,23,019,23865
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Exeter town,23,019,24110
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Garland town,23,019,27190
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Glenburn town,23,019,27645
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Greenbush town,23,019,29185
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Hampden town,23,019,30795
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Hermon town,23,019,32510
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Holden town,23,019,33490
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Howland town,23,019,34190
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Hudson town,23,019,34365
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Kenduskeag town,23,019,36325
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Lagrange town,23,019,37760
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Levant town,23,019,38705
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Maxfield town,23,019,44340
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Milford town,23,019,45670
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Newburgh town,23,019,48505
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Old Town city,23,019,55225
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Orono town,23,019,55565
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Orrington town,23,019,55680
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Passadumkeag town,23,019,57045
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Penobscot Indian Island Reservation,23,019,57936
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Plymouth town,23,019,59950
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Seboeis plantation,23,019,67160
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Stetson town,23,019,74055
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Veazie town,23,019,78780
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Lake View plantation,23,021,37970
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Medford town,23,021,44830
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Southeast Piscataquis unorganized territory,23,021,70655
+70750,,,"Bangor, ME",Metropolitan NECTA,,,Winterport town,23,027,86760
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Barnstable Town city,25,001,03690
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Bourne town,25,001,07175
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Brewster town,25,001,07980
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Chatham town,25,001,12995
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Dennis town,25,001,16775
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Eastham town,25,001,19295
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Falmouth town,25,001,23105
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Harwich town,25,001,29020
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Mashpee town,25,001,39100
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Orleans town,25,001,51440
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Provincetown town,25,001,55500
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Sandwich town,25,001,59735
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Truro town,25,001,70605
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Wellfleet town,25,001,74385
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Yarmouth town,25,001,82525
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Marion town,25,023,38540
+70900,,715,"Barnstable Town, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Wareham town,25,023,72985
+71050,,,"Barre, VT",Micropolitan NECTA,,,Orange town,50,017,53425
+71050,,,"Barre, VT",Micropolitan NECTA,,,Washington town,50,017,76750
+71050,,,"Barre, VT",Micropolitan NECTA,,,Williamstown town,50,017,84175
+71050,,,"Barre, VT",Micropolitan NECTA,,,Barre city,50,023,03175
+71050,,,"Barre, VT",Micropolitan NECTA,,,Barre town,50,023,03250
+71050,,,"Barre, VT",Micropolitan NECTA,,,Berlin town,50,023,05650
+71050,,,"Barre, VT",Micropolitan NECTA,,,Calais town,50,023,11350
+71050,,,"Barre, VT",Micropolitan NECTA,,,East Montpelier town,50,023,21925
+71050,,,"Barre, VT",Micropolitan NECTA,,,Marshfield town,50,023,43600
+71050,,,"Barre, VT",Micropolitan NECTA,,,Middlesex town,50,023,44500
+71050,,,"Barre, VT",Micropolitan NECTA,,,Montpelier city,50,023,46000
+71050,,,"Barre, VT",Micropolitan NECTA,,,Plainfield town,50,023,55825
+71050,,,"Barre, VT",Micropolitan NECTA,,,Woodbury town,50,023,85525
+71050,,,"Barre, VT",Micropolitan NECTA,,,Worcester town,50,023,86125
+71350,,,"Bennington, VT",Micropolitan NECTA,,,Bennington town,50,003,04825
+71350,,,"Bennington, VT",Micropolitan NECTA,,,Pownal town,50,003,57025
+71350,,,"Bennington, VT",Micropolitan NECTA,,,Shaftsbury town,50,003,63550
+71350,,,"Bennington, VT",Micropolitan NECTA,,,Woodford town,50,003,85675
+71500,,,"Berlin, NH",Micropolitan NECTA,,,Berlin city,33,007,05140
+71500,,,"Berlin, NH",Micropolitan NECTA,,,Dummer town,33,007,19300
+71500,,,"Berlin, NH",Micropolitan NECTA,,,Gorham town,33,007,30260
+71500,,,"Berlin, NH",Micropolitan NECTA,,,Milan town,33,007,47860
+71500,,,"Berlin, NH",Micropolitan NECTA,,,Randolph town,33,007,63860
+71500,,,"Berlin, NH",Micropolitan NECTA,,,Shelburne town,33,007,68980
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Mansfield town,25,005,38225
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Andover town,25,009,01465
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Lynnfield town,25,009,37560
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Saugus town,25,009,60015
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Acton town,25,017,00380
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Arlington town,25,017,01605
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Ayer town,25,017,03005
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Bedford town,25,017,04615
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Belmont town,25,017,05070
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Boxborough town,25,017,07350
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Burlington town,25,017,09840
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Cambridge city,25,017,11000
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Carlisle town,25,017,11525
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Concord town,25,017,15060
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Everett city,25,017,21990
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Groton town,25,017,27480
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Lexington town,25,017,35215
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Lincoln town,25,017,35425
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Malden city,25,017,37875
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Maynard town,25,017,39625
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Medford city,25,017,39835
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Melrose city,25,017,40115
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Newton city,25,017,45560
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",North Reading town,25,017,48955
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Reading town,25,017,56130
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Sherborn town,25,017,61380
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Shirley town,25,017,61590
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Somerville city,25,017,62535
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Stoneham town,25,017,67665
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Stow town,25,017,68050
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Sudbury town,25,017,68260
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Wakefield town,25,017,72215
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Waltham city,25,017,72600
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Watertown Town city,25,017,73440
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Wayland town,25,017,73790
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Weston town,25,017,77255
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Wilmington town,25,017,80230
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Winchester town,25,017,80510
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Woburn city,25,017,81035
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Braintree Town city,25,021,07740
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Brookline town,25,021,09175
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Canton town,25,021,11315
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Cohasset town,25,021,14640
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Dedham town,25,021,16495
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Dover town,25,021,17405
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Foxborough town,25,021,24820
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Franklin Town city,25,021,25172
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Holbrook town,25,021,30455
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Medfield town,25,021,39765
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Medway town,25,021,39975
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Millis town,25,021,41515
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Milton town,25,021,41690
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Needham town,25,021,44105
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Norfolk town,25,021,46050
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Norwood town,25,021,50250
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Quincy city,25,021,55745
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Randolph Town city,25,021,56000
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Sharon town,25,021,60785
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Stoughton town,25,021,67945
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Walpole town,25,021,72495
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Wellesley town,25,021,74175
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Westwood town,25,021,78690
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Weymouth Town city,25,021,78972
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Wrentham town,25,021,82315
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hanover town,25,023,28285
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hanson town,25,023,28495
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hingham town,25,023,30210
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hull town,25,023,31645
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Marshfield town,25,023,38855
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Norwell town,25,023,50145
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Rockland town,25,023,57775
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Scituate town,25,023,60330
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Whitman town,25,023,79530
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Boston city,25,025,07000
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Chelsea city,25,025,13205
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Revere city,25,025,56585
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Winthrop Town city,25,025,81005
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Bolton town,25,027,06365
+71650,71634,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Boston-Cambridge-Newton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Harvard town,25,027,28950
+71650,72104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Brockton-Bridgewater Town-Easton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Easton town,25,005,20100
+71650,72104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Brockton-Bridgewater Town-Easton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Avon town,25,021,02935
+71650,72104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Brockton-Bridgewater Town-Easton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Abington town,25,023,00170
+71650,72104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Brockton-Bridgewater Town-Easton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Bridgewater Town city,25,023,08130
+71650,72104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Brockton-Bridgewater Town-Easton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Brockton city,25,023,09000
+71650,72104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Brockton-Bridgewater Town-Easton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",East Bridgewater town,25,023,18455
+71650,72104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Brockton-Bridgewater Town-Easton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",West Bridgewater town,25,023,75260
+71650,73104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Framingham, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Ashland town,25,017,02130
+71650,73104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Framingham, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Framingham city,25,017,24960
+71650,73104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Framingham, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Holliston town,25,017,30700
+71650,73104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Framingham, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hopkinton town,25,017,31085
+71650,73104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Framingham, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hudson town,25,017,31540
+71650,73104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Framingham, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Marlborough city,25,017,38715
+71650,73104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Framingham, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Natick town,25,017,43895
+71650,73104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Framingham, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Berlin town,25,027,05490
+71650,73104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Framingham, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hopedale town,25,027,30945
+71650,73104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Framingham, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Mendon town,25,027,40255
+71650,73104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Framingham, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Milford town,25,027,41165
+71650,73104,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Framingham, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Southborough town,25,027,63165
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Amesbury Town city,25,009,01260
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Boxford town,25,009,07420
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Georgetown town,25,009,25625
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Groveland town,25,009,27620
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Haverhill city,25,009,29405
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Merrimac town,25,009,40430
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Newbury town,25,009,45175
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Newburyport city,25,009,45245
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Rowley town,25,009,58405
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Salisbury town,25,009,59245
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",West Newbury town,25,009,77150
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Atkinson town,33,015,02340
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Chester town,33,015,12100
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Danville town,33,015,17140
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",East Kingston town,33,015,21380
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Fremont town,33,015,27940
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hampstead town,33,015,32900
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hampton Falls town,33,015,33460
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Kensington town,33,015,39780
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Kingston town,33,015,40100
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Newton town,33,015,52900
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Plaistow town,33,015,62500
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Sandown town,33,015,67620
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Seabrook town,33,015,68260
+71650,73604,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Haverhill-Newburyport-Amesbury Town, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",South Hampton town,33,015,71140
+71650,74204,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lawrence-Methuen Town-North Andover, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Lawrence city,25,009,34550
+71650,74204,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lawrence-Methuen Town-North Andover, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Methuen Town city,25,009,40710
+71650,74204,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lawrence-Methuen Town-North Andover, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",North Andover town,25,009,46365
+71650,74204,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lawrence-Methuen Town-North Andover, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Salem town,33,015,66660
+71650,74804,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lowell-Billerica-Chelmsford, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Billerica town,25,017,05805
+71650,74804,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lowell-Billerica-Chelmsford, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Chelmsford town,25,017,13135
+71650,74804,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lowell-Billerica-Chelmsford, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Dracut town,25,017,17475
+71650,74804,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lowell-Billerica-Chelmsford, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Dunstable town,25,017,17825
+71650,74804,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lowell-Billerica-Chelmsford, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Littleton town,25,017,35950
+71650,74804,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lowell-Billerica-Chelmsford, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Lowell city,25,017,37000
+71650,74804,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lowell-Billerica-Chelmsford, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Tewksbury town,25,017,69415
+71650,74804,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lowell-Billerica-Chelmsford, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Tyngsborough town,25,017,71025
+71650,74804,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lowell-Billerica-Chelmsford, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Westford town,25,017,76135
+71650,74804,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lowell-Billerica-Chelmsford, MA-NH","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Pelham town,33,011,59940
+71650,74854,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lynn-Salem-Marblehead, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Lynn city,25,009,37490
+71650,74854,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lynn-Salem-Marblehead, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Marblehead town,25,009,38400
+71650,74854,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lynn-Salem-Marblehead, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Nahant town,25,009,43580
+71650,74854,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lynn-Salem-Marblehead, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Salem city,25,009,59105
+71650,74854,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Lynn-Salem-Marblehead, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Swampscott town,25,009,68645
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Pepperell town,25,017,52805
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Townsend town,25,017,70360
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Amherst town,33,011,01300
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Brookline town,33,011,08100
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Greenville town,33,011,31940
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hollis town,33,011,37140
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hudson town,33,011,37940
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Litchfield town,33,011,42260
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Lyndeborough town,33,011,44580
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Mason town,33,011,46260
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Merrimack town,33,011,47540
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Milford town,33,011,48020
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Mont Vernon town,33,011,49140
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Nashua city,33,011,50260
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Wilton town,33,011,85220
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Derry town,33,015,17940
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Londonderry town,33,015,43220
+71650,75404,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Nashua, NH-MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Windham town,33,015,85780
+71650,76524,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Peabody-Beverly-Gloucester, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Beverly city,25,009,05595
+71650,76524,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Peabody-Beverly-Gloucester, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Danvers town,25,009,16250
+71650,76524,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Peabody-Beverly-Gloucester, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Essex town,25,009,21850
+71650,76524,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Peabody-Beverly-Gloucester, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Gloucester city,25,009,26150
+71650,76524,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Peabody-Beverly-Gloucester, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hamilton town,25,009,27900
+71650,76524,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Peabody-Beverly-Gloucester, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Ipswich town,25,009,32310
+71650,76524,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Peabody-Beverly-Gloucester, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Manchester-by-the-Sea town,25,009,37995
+71650,76524,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Peabody-Beverly-Gloucester, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Middleton town,25,009,41095
+71650,76524,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Peabody-Beverly-Gloucester, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Peabody city,25,009,52490
+71650,76524,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Peabody-Beverly-Gloucester, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Rockport town,25,009,57880
+71650,76524,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Peabody-Beverly-Gloucester, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Topsfield town,25,009,70150
+71650,76524,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Peabody-Beverly-Gloucester, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Wenham town,25,009,74595
+71650,76684,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Plymouth-Pembroke-Duxbury, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Carver town,25,023,11665
+71650,76684,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Plymouth-Pembroke-Duxbury, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Duxbury town,25,023,17895
+71650,76684,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Plymouth-Pembroke-Duxbury, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Halifax town,25,023,27795
+71650,76684,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Plymouth-Pembroke-Duxbury, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Kingston town,25,023,33220
+71650,76684,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Plymouth-Pembroke-Duxbury, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Pembroke town,25,023,52630
+71650,76684,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Plymouth-Pembroke-Duxbury, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Plymouth town,25,023,54310
+71650,76684,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Plymouth-Pembroke-Duxbury, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Plympton town,25,023,54415
+71650,78254,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Taunton-Middleborough-Norton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Berkley town,25,005,05280
+71650,78254,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Taunton-Middleborough-Norton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Dighton town,25,005,16950
+71650,78254,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Taunton-Middleborough-Norton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Freetown town,25,005,25240
+71650,78254,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Taunton-Middleborough-Norton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Norton town,25,005,49970
+71650,78254,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Taunton-Middleborough-Norton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Raynham town,25,005,56060
+71650,78254,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Taunton-Middleborough-Norton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Taunton city,25,005,69170
+71650,78254,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Taunton-Middleborough-Norton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Lakeville town,25,023,33920
+71650,78254,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Taunton-Middleborough-Norton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Middleborough town,25,023,40850
+71650,78254,715,"Boston-Cambridge-Newton, MA-NH",Metropolitan NECTA,"Taunton-Middleborough-Norton, MA","Boston-Worcester-Providence, MA-RI-NH-CT-ME",Rochester town,25,023,57600
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Bridgeport city and town,09,001,08070
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Darien town,09,001,18850
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Easton town,09,001,23890
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Fairfield town,09,001,26620
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Greenwich town,09,001,33620
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Monroe town,09,001,48620
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",New Canaan town,09,001,50580
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Norwalk city and town,09,001,56060
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Redding town,09,001,63480
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Ridgefield town,09,001,63970
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Shelton city and town,09,001,68170
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Stamford city and town,09,001,73070
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Stratford town,09,001,74190
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Trumbull town,09,001,77200
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Weston town,09,001,83430
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Westport town,09,001,83500
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Wilton town,09,001,86370
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Ansonia city and town,09,009,01220
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Derby city and town,09,009,19550
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Milford city and town,09,009,47535
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Oxford town,09,009,58300
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Seymour town,09,009,67610
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Southbury town,09,009,69640
+71950,,720,"Bridgeport-Stamford-Norwalk, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Woodbridge town,09,009,87700
+72250,,775,"Brunswick, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Brunswick town,23,005,08430
+72250,,775,"Brunswick, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Harpswell town,23,005,31390
+72250,,775,"Brunswick, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Dresden town,23,015,18475
+72250,,775,"Brunswick, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Arrowsic town,23,023,01570
+72250,,775,"Brunswick, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Bath city,23,023,03355
+72250,,775,"Brunswick, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Bowdoin town,23,023,06260
+72250,,775,"Brunswick, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Bowdoinham town,23,023,06365
+72250,,775,"Brunswick, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Georgetown town,23,023,27295
+72250,,775,"Brunswick, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Perkins unorganized territory,23,023,58070
+72250,,775,"Brunswick, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Phippsburg town,23,023,58515
+72250,,775,"Brunswick, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Richmond town,23,023,62645
+72250,,775,"Brunswick, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Topsham town,23,023,76960
+72250,,775,"Brunswick, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",West Bath town,23,023,81930
+72250,,775,"Brunswick, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Woolwich town,23,023,87460
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Bristol town,50,001,09025
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Ferrisburgh town,50,001,26300
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Monkton town,50,001,45550
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Starksboro town,50,001,70075
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Vergennes city,50,001,74650
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Bolton town,50,007,06550
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Burlington city,50,007,10675
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Charlotte town,50,007,13300
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Colchester town,50,007,14875
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Essex town,50,007,24175
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Hinesburg town,50,007,33475
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Huntington town,50,007,34600
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Jericho town,50,007,36700
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Milton town,50,007,45250
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Richmond town,50,007,59275
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,St. George town,50,007,62050
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Shelburne town,50,007,64300
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,South Burlington city,50,007,66175
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Underhill town,50,007,73975
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Westford town,50,007,80350
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Williston town,50,007,84475
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Winooski city,50,007,85150
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Bakersfield town,50,011,02500
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Fairfax town,50,011,24925
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Fairfield town,50,011,25225
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Fletcher town,50,011,26500
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Georgia town,50,011,27700
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,St. Albans city,50,011,61675
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,St. Albans town,50,011,61750
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Swanton town,50,011,71725
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Grand Isle town,50,013,29275
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,North Hero town,50,013,50650
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,South Hero town,50,013,67000
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Cambridge town,50,015,11500
+72400,,,"Burlington-South Burlington, VT",Metropolitan NECTA,,,Duxbury town,50,023,18550
+72500,,725,"Claremont, NH",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Claremont city,33,019,12900
+72500,,725,"Claremont, NH",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Unity town,33,019,77940
+72700,,715,"Concord, NH",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Boscawen town,33,013,06260
+72700,,715,"Concord, NH",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Bow town,33,013,06500
+72700,,715,"Concord, NH",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Canterbury town,33,013,09860
+72700,,715,"Concord, NH",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Chichester town,33,013,12420
+72700,,715,"Concord, NH",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Concord city,33,013,14200
+72700,,715,"Concord, NH",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Epsom town,33,013,24900
+72700,,715,"Concord, NH",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hopkinton town,33,013,37540
+72700,,715,"Concord, NH",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Loudon town,33,013,43380
+72700,,715,"Concord, NH",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Salisbury town,33,013,66980
+72700,,715,"Concord, NH",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Warner town,33,013,78580
+72700,,715,"Concord, NH",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Webster town,33,013,80020
+72850,,720,"Danbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Bethel town,09,001,04720
+72850,,720,"Danbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Brookfield town,09,001,08980
+72850,,720,"Danbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Danbury city and town,09,001,18500
+72850,,720,"Danbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",New Fairfield town,09,001,50860
+72850,,720,"Danbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Newtown town,09,001,52980
+72850,,720,"Danbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Sherman town,09,001,68310
+72850,,720,"Danbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Bridgewater town,09,005,08210
+72850,,720,"Danbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",New Milford town,09,005,52630
+72850,,720,"Danbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Roxbury town,09,005,65930
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,Berwick town,23,031,04720
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,Lebanon town,23,031,38425
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,South Berwick town,23,031,70030
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,Dover city,33,017,18820
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,Durham town,33,017,19700
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,Farmington town,33,017,26020
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,Lee town,33,017,41460
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,Madbury town,33,017,44820
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,Middleton town,33,017,47700
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,Milton town,33,017,48660
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,New Durham town,33,017,51220
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,Rochester city,33,017,65140
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,Rollinsford town,33,017,65540
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,Somersworth city,33,017,69940
+73050,,,"Dover-Durham, NH-ME",Metropolitan NECTA,,,Strafford town,33,017,73860
+73300,,790,"Greenfield Town, MA",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Bernardston town,25,011,05560
+73300,,790,"Greenfield Town, MA",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Colrain town,25,011,14885
+73300,,790,"Greenfield Town, MA",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Erving town,25,011,21780
+73300,,790,"Greenfield Town, MA",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Gill town,25,011,25730
+73300,,790,"Greenfield Town, MA",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Greenfield Town city,25,011,27100
+73300,,790,"Greenfield Town, MA",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Heath town,25,011,29650
+73300,,790,"Greenfield Town, MA",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Leyden town,25,011,35285
+73300,,790,"Greenfield Town, MA",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Montague town,25,011,42285
+73300,,790,"Greenfield Town, MA",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Northfield town,25,011,47835
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Avon town,09,003,02060
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Berlin town,09,003,04300
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Bloomfield town,09,003,05910
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Bristol city and town,09,003,08490
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Burlington town,09,003,10100
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Canton town,09,003,12270
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",East Granby town,09,003,22070
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",East Hartford town,09,003,22630
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Farmington town,09,003,27600
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Glastonbury town,09,003,31240
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Granby town,09,003,32640
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Hartford city and town,09,003,37070
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Hartland town,09,003,37140
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Manchester town,09,003,44700
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Marlborough town,09,003,45820
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",New Britain city and town,09,003,50440
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Newington town,09,003,52140
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Plainville town,09,003,60120
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Rocky Hill town,09,003,65370
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Simsbury town,09,003,68940
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Southington town,09,003,70550
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",South Windsor town,09,003,71390
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",West Hartford town,09,003,82590
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Wethersfield town,09,003,84900
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Windsor town,09,003,87000
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Barkhamsted town,09,005,02760
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",New Hartford town,09,005,51350
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Plymouth town,09,005,60750
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Thomaston town,09,005,75730
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Cromwell town,09,007,18080
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",East Haddam town,09,007,22280
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",East Hampton town,09,007,22490
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Haddam town,09,007,35230
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Middletown city and town,09,007,47360
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Portland town,09,007,61800
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Colchester town,09,011,15910
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Andover town,09,013,01080
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Bolton town,09,013,06260
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Columbia town,09,013,16400
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Coventry town,09,013,17800
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Ellington town,09,013,25360
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Hebron town,09,013,37910
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Mansfield town,09,013,44910
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Stafford town,09,013,72090
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Tolland town,09,013,76290
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Union town,09,013,77830
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Vernon town,09,013,78250
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Willington town,09,013,85950
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Ashford town,09,015,01430
+73450,,790,"Hartford-East Hartford-Middletown, CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Chaplin town,09,015,13810
+73750,,,"Keene, NH",Micropolitan NECTA,,,Alstead town,33,005,00820
+73750,,,"Keene, NH",Micropolitan NECTA,,,Chesterfield town,33,005,12260
+73750,,,"Keene, NH",Micropolitan NECTA,,,Gilsum town,33,005,29220
+73750,,,"Keene, NH",Micropolitan NECTA,,,Harrisville town,33,005,34420
+73750,,,"Keene, NH",Micropolitan NECTA,,,Keene city,33,005,39300
+73750,,,"Keene, NH",Micropolitan NECTA,,,Marlborough town,33,005,45460
+73750,,,"Keene, NH",Micropolitan NECTA,,,Marlow town,33,005,45700
+73750,,,"Keene, NH",Micropolitan NECTA,,,Nelson town,33,005,50580
+73750,,,"Keene, NH",Micropolitan NECTA,,,Richmond town,33,005,64420
+73750,,,"Keene, NH",Micropolitan NECTA,,,Roxbury town,33,005,65700
+73750,,,"Keene, NH",Micropolitan NECTA,,,Stoddard town,33,005,73700
+73750,,,"Keene, NH",Micropolitan NECTA,,,Sullivan town,33,005,74900
+73750,,,"Keene, NH",Micropolitan NECTA,,,Surry town,33,005,75300
+73750,,,"Keene, NH",Micropolitan NECTA,,,Swanzey town,33,005,75700
+73750,,,"Keene, NH",Micropolitan NECTA,,,Troy town,33,005,77380
+73750,,,"Keene, NH",Micropolitan NECTA,,,Westmoreland town,33,005,82660
+73750,,,"Keene, NH",Micropolitan NECTA,,,Winchester town,33,005,85540
+73900,,715,"Laconia, NH",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Belmont town,33,001,04740
+73900,,715,"Laconia, NH",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Gilford town,33,001,28740
+73900,,715,"Laconia, NH",Micropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Laconia city,33,001,40180
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Canaan town,33,009,08980
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Enfield town,33,009,24340
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Grafton town,33,009,30820
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Hanover town,33,009,33860
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Lebanon city,33,009,41300
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Lyme town,33,009,44260
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Orange town,33,009,58340
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Orford town,33,009,58500
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Piermont town,33,009,61060
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Cornish town,33,019,15060
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Croydon town,33,019,16340
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Grantham town,33,019,31220
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Plainfield town,33,019,62340
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Springfield town,33,019,72740
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Bradford town,50,017,07375
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Fairlee town,50,017,25675
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Strafford town,50,017,70675
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Thetford town,50,017,72400
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",West Fairlee town,50,017,79975
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Hartford town,50,027,32275
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Hartland town,50,027,32425
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Norwich town,50,027,52900
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Pomfret town,50,027,56350
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Royalton town,50,027,60850
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Sharon town,50,027,63775
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",West Windsor town,50,027,83050
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Windsor town,50,027,84925
+74350,,725,"Lebanon, NH-VT",Micropolitan NECTA,,"Lebanon-Claremont, NH-VT",Woodstock town,50,027,85975
+74500,,715,"Leominster-Gardner, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Ashby town,25,017,01955
+74500,,715,"Leominster-Gardner, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Ashburnham town,25,027,01885
+74500,,715,"Leominster-Gardner, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Fitchburg city,25,027,23875
+74500,,715,"Leominster-Gardner, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Gardner city,25,027,25485
+74500,,715,"Leominster-Gardner, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hubbardston town,25,027,31435
+74500,,715,"Leominster-Gardner, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Leominster city,25,027,35075
+74500,,715,"Leominster-Gardner, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Lunenburg town,25,027,37420
+74500,,715,"Leominster-Gardner, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Petersham town,25,027,53120
+74500,,715,"Leominster-Gardner, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Phillipston town,25,027,53225
+74500,,715,"Leominster-Gardner, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Templeton town,25,027,69275
+74500,,715,"Leominster-Gardner, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Westminster town,25,027,77010
+74500,,715,"Leominster-Gardner, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Winchendon town,25,027,80405
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Auburn city,23,001,02060
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Greene town,23,001,29255
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Leeds town,23,001,38565
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Lewiston city,23,001,38740
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Lisbon town,23,001,40035
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Livermore town,23,001,40665
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Mechanic Falls town,23,001,44585
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Minot town,23,001,46160
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Poland town,23,001,60020
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Sabattus town,23,001,64570
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Turner town,23,001,77800
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Wales town,23,001,79585
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Litchfield town,23,011,40175
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Monmouth town,23,011,46405
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Buckfield town,23,017,08710
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Canton town,23,017,10005
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Hartford town,23,017,31670
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Hebron town,23,017,32370
+74650,,775,"Lewiston-Auburn, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Sumner town,23,017,75035
+74950,,715,"Manchester, NH",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Bedford town,33,011,04500
+74950,,715,"Manchester, NH",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Goffstown town,33,011,29860
+74950,,715,"Manchester, NH",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Manchester city,33,011,45140
+74950,,715,"Manchester, NH",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",New Boston town,33,011,50740
+74950,,715,"Manchester, NH",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Weare town,33,011,79780
+74950,,715,"Manchester, NH",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Allenstown town,33,013,00660
+74950,,715,"Manchester, NH",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Dunbarton town,33,013,19460
+74950,,715,"Manchester, NH",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hooksett town,33,013,37300
+74950,,715,"Manchester, NH",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Pembroke town,33,013,60020
+74950,,715,"Manchester, NH",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Auburn town,33,015,02820
+74950,,715,"Manchester, NH",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Candia town,33,015,09300
+74950,,715,"Manchester, NH",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Deerfield town,33,015,17460
+75550,,715,"New Bedford, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Acushnet town,25,005,00520
+75550,,715,"New Bedford, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Dartmouth town,25,005,16425
+75550,,715,"New Bedford, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Fairhaven town,25,005,22130
+75550,,715,"New Bedford, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",New Bedford city,25,005,45000
+75550,,715,"New Bedford, MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Mattapoisett town,25,023,39450
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Chester town,09,007,14300
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Clinton town,09,007,15350
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Deep River town,09,007,19130
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Durham town,09,007,20810
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Essex town,09,007,26270
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Killingworth town,09,007,40710
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Middlefield town,09,007,47080
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Old Saybrook town,09,007,57320
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Westbrook town,09,007,81680
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Bethany town,09,009,04580
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Branford town,09,009,07310
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Cheshire town,09,009,14160
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",East Haven town,09,009,22910
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Guilford town,09,009,34950
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Hamden town,09,009,35650
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Madison town,09,009,44560
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Meriden city and town,09,009,46520
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",New Haven city and town,09,009,52070
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",North Branford town,09,009,53890
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",North Haven town,09,009,54870
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Orange town,09,009,57600
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Wallingford town,09,009,78740
+75700,,720,"New Haven, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",West Haven city and town,09,009,82870
+76150,,770,"North Adams, MA-VT",Micropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Clarksburg town,25,003,14010
+76150,,770,"North Adams, MA-VT",Micropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Florida town,25,003,24120
+76150,,770,"North Adams, MA-VT",Micropolitan NECTA,,"Pittsfield-North Adams, MA-VT",New Ashford town,25,003,44385
+76150,,770,"North Adams, MA-VT",Micropolitan NECTA,,"Pittsfield-North Adams, MA-VT",North Adams city,25,003,46225
+76150,,770,"North Adams, MA-VT",Micropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Williamstown town,25,003,79985
+76150,,770,"North Adams, MA-VT",Micropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Monroe town,25,011,42040
+76150,,770,"North Adams, MA-VT",Micropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Stamford town,50,003,69775
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Bozrah town,09,011,06820
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,East Lyme town,09,011,23400
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Franklin town,09,011,29910
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Griswold town,09,011,33900
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Groton town,09,011,34250
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Ledyard town,09,011,42600
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Lisbon town,09,011,43230
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Lyme town,09,011,44210
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Montville town,09,011,48900
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,New London city and town,09,011,52350
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,North Stonington town,09,011,55500
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Norwich city and town,09,011,56270
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Old Lyme town,09,011,57040
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Preston town,09,011,62150
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Salem town,09,011,66210
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Sprague town,09,011,71670
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Stonington town,09,011,73770
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Voluntown town,09,011,78600
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Waterford town,09,011,80280
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Canterbury town,09,015,12130
+76450,,,"Norwich-New London-Westerly, CT-RI",Metropolitan NECTA,,,Westerly town,44,009,77000
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Adams town,25,003,00555
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Cheshire town,25,003,13345
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Dalton town,25,003,16180
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Hancock town,25,003,28180
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Hinsdale town,25,003,30315
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Lanesborough town,25,003,34340
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Lee town,25,003,34655
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Lenox town,25,003,34970
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Peru town,25,003,53050
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Pittsfield city,25,003,53960
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Richmond town,25,003,56795
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Savoy town,25,003,60225
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Stockbridge town,25,003,67595
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Washington town,25,003,73335
+76600,,770,"Pittsfield, MA",Metropolitan NECTA,,"Pittsfield-North Adams, MA-VT",Windsor town,25,003,80685
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Durham town,23,001,19105
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Baldwin town,23,005,02655
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Cape Elizabeth town,23,005,10180
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Casco town,23,005,11125
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Cumberland town,23,005,15430
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Falmouth town,23,005,24495
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Freeport town,23,005,26525
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Frye Island town,23,005,27025
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Gorham town,23,005,28240
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Gray town,23,005,28870
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Long Island town,23,005,41067
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Naples town,23,005,48085
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",New Gloucester town,23,005,48820
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",North Yarmouth town,23,005,53860
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Portland city,23,005,60545
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Pownal town,23,005,60685
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Raymond town,23,005,61945
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Scarborough town,23,005,66145
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Sebago town,23,005,66775
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",South Portland city,23,005,71990
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Standish town,23,005,73670
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Westbrook city,23,005,82105
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Windham town,23,005,86025
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Yarmouth town,23,005,87845
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Hiram town,23,017,33315
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Alfred town,23,031,00730
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Arundel town,23,031,01605
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Biddeford city,23,031,04860
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Buxton town,23,031,09410
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Cornish town,23,031,14485
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Dayton town,23,031,16725
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Hollis town,23,031,33665
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Kennebunk town,23,031,36535
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Limerick town,23,031,39195
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Limington town,23,031,39405
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Lyman town,23,031,41750
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Newfield town,23,031,48750
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Old Orchard Beach town,23,031,55085
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Parsonsfield town,23,031,56870
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Saco city,23,031,64675
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Shapleigh town,23,031,67475
+76750,,775,"Portland-South Portland, ME",Metropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Waterboro town,23,031,80530
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Eliot town,23,031,22955
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Kittery town,23,031,37270
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",York town,23,031,87985
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Brentwood town,33,015,07220
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Epping town,33,015,24660
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Exeter town,33,015,25380
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Greenland town,33,015,31700
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hampton town,33,015,33060
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",New Castle town,33,015,50980
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Newfields town,33,015,51380
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Newington town,33,015,51620
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Newmarket town,33,015,52340
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",North Hampton town,33,015,54580
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Nottingham town,33,015,57460
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Portsmouth city,33,015,62900
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Rye town,33,015,66180
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Stratham town,33,015,74340
+76900,,715,"Portsmouth, NH-ME",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Barrington town,33,017,03460
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Attleboro city,25,005,02690
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Fall River city,25,005,23000
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",North Attleborough town,25,005,46575
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Rehoboth town,25,005,56375
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Seekonk town,25,005,60645
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Somerset town,25,005,62430
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Swansea town,25,005,68750
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Westport town,25,005,77570
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Bellingham town,25,021,04930
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Plainville town,25,021,54100
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Blackstone town,25,027,06015
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Millville town,25,027,41585
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Barrington town,44,001,05140
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Bristol town,44,001,09280
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Warren town,44,001,73760
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Coventry town,44,003,18640
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",East Greenwich town,44,003,22240
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Warwick city,44,003,74300
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",West Greenwich town,44,003,77720
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",West Warwick town,44,003,78440
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Jamestown town,44,005,36820
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Little Compton town,44,005,42400
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Middletown town,44,005,45460
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Newport city,44,005,49960
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Portsmouth town,44,005,57880
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Tiverton town,44,005,70880
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Burrillville town,44,007,11800
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Central Falls city,44,007,14140
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Cranston city,44,007,19180
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Cumberland town,44,007,20080
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",East Providence city,44,007,22960
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Foster town,44,007,27460
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Glocester town,44,007,30340
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Johnston town,44,007,37720
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Lincoln town,44,007,41500
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",North Providence town,44,007,51760
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",North Smithfield town,44,007,52480
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Pawtucket city,44,007,54640
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Providence city,44,007,59000
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Scituate town,44,007,64220
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Smithfield town,44,007,66200
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Woonsocket city,44,007,80780
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Charlestown town,44,009,14500
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Exeter town,44,009,25300
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hopkinton town,44,009,35380
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Narragansett town,44,009,48340
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",North Kingstown town,44,009,51580
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Richmond town,44,009,61160
+77200,,715,"Providence-Warwick, RI-MA",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",South Kingstown town,44,009,67460
+77650,,,"Rutland, VT",Micropolitan NECTA,,,Chittenden town,50,021,14350
+77650,,,"Rutland, VT",Micropolitan NECTA,,,Clarendon town,50,021,14500
+77650,,,"Rutland, VT",Micropolitan NECTA,,,Hubbardton town,50,021,34450
+77650,,,"Rutland, VT",Micropolitan NECTA,,,Ira town,50,021,35425
+77650,,,"Rutland, VT",Micropolitan NECTA,,,Killington town,50,021,37685
+77650,,,"Rutland, VT",Micropolitan NECTA,,,Mendon town,50,021,44125
+77650,,,"Rutland, VT",Micropolitan NECTA,,,Middletown Springs town,50,021,44800
+77650,,,"Rutland, VT",Micropolitan NECTA,,,Pittsford town,50,021,55600
+77650,,,"Rutland, VT",Micropolitan NECTA,,,Proctor town,50,021,57250
+77650,,,"Rutland, VT",Micropolitan NECTA,,,Rutland city,50,021,61225
+77650,,,"Rutland, VT",Micropolitan NECTA,,,Rutland town,50,021,61300
+77650,,,"Rutland, VT",Micropolitan NECTA,,,Shrewsbury town,50,021,65275
+77650,,,"Rutland, VT",Micropolitan NECTA,,,Tinmouth town,50,021,72925
+77650,,,"Rutland, VT",Micropolitan NECTA,,,Wallingford town,50,021,75925
+77650,,,"Rutland, VT",Micropolitan NECTA,,,West Rutland town,50,021,82300
+77950,,775,"Sanford, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Acton town,23,031,00275
+77950,,775,"Sanford, ME",Micropolitan NECTA,,"Portland-Lewiston-South Portland, ME",Sanford city,23,031,65725
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",East Windsor town,09,003,24800
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Enfield town,09,003,25990
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Suffield town,09,003,74540
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Windsor Locks town,09,003,87070
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Somers town,09,013,69220
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Ashfield town,25,011,02095
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Conway town,25,011,15200
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Deerfield town,25,011,16670
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Leverett town,25,011,35180
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",New Salem town,25,011,45490
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Shutesbury town,25,011,61905
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Sunderland town,25,011,68400
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Whately town,25,011,79110
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Agawam Town city,25,013,00840
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Blandford town,25,013,06085
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Chester town,25,013,13485
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Chicopee city,25,013,13660
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",East Longmeadow town,25,013,19645
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Granville town,25,013,26675
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Hampden town,25,013,28075
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Holyoke city,25,013,30840
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Longmeadow town,25,013,36300
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Ludlow town,25,013,37175
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Monson town,25,013,42145
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Montgomery town,25,013,42530
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Palmer Town city,25,013,52144
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Russell town,25,013,58650
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Southwick town,25,013,65825
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Springfield city,25,013,67000
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Tolland town,25,013,70045
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Wales town,25,013,72390
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Westfield city,25,013,76030
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",West Springfield Town city,25,013,77890
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Wilbraham town,25,013,79740
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Amherst town,25,015,01325
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Belchertown town,25,015,04825
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Chesterfield town,25,015,13590
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Cummington town,25,015,16040
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Easthampton Town city,25,015,19370
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Goshen town,25,015,26290
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Granby town,25,015,26535
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Hadley town,25,015,27690
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Hatfield town,25,015,29265
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Huntington town,25,015,31785
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Middlefield town,25,015,40990
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Northampton city,25,015,46330
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Pelham town,25,015,52560
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Plainfield town,25,015,54030
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Southampton town,25,015,62745
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",South Hadley town,25,015,64145
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Ware town,25,015,72880
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Westhampton town,25,015,76380
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Williamsburg town,25,015,79915
+78100,,790,"Springfield, MA-CT",Metropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Worthington town,25,015,82175
+78400,,790,"Torrington, CT",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Colebrook town,09,005,16050
+78400,,790,"Torrington, CT",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Harwinton town,09,005,37280
+78400,,790,"Torrington, CT",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Torrington city and town,09,005,76570
+78400,,790,"Torrington, CT",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Winchester town,09,005,86440
+78500,,,"Vineyard Haven, MA",Micropolitan NECTA,,,Aquinnah town,25,007,01585
+78500,,,"Vineyard Haven, MA",Micropolitan NECTA,,,Chilmark town,25,007,13800
+78500,,,"Vineyard Haven, MA",Micropolitan NECTA,,,Edgartown town,25,007,21150
+78500,,,"Vineyard Haven, MA",Micropolitan NECTA,,,Oak Bluffs town,25,007,50390
+78500,,,"Vineyard Haven, MA",Micropolitan NECTA,,,Tisbury town,25,007,69940
+78500,,,"Vineyard Haven, MA",Micropolitan NECTA,,,West Tisbury town,25,007,78235
+78700,,720,"Waterbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Watertown town,09,005,80490
+78700,,720,"Waterbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Beacon Falls town,09,009,03250
+78700,,720,"Waterbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Middlebury town,09,009,46940
+78700,,720,"Waterbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Naugatuck borough and town,09,009,49950
+78700,,720,"Waterbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Prospect town,09,009,62290
+78700,,720,"Waterbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Waterbury city and town,09,009,80070
+78700,,720,"Waterbury, CT",Metropolitan NECTA,,"Bridgeport-New Haven-Stamford, CT",Wolcott town,09,009,87560
+78850,,710,"Waterville, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Albion town,23,011,00590
+78850,,710,"Waterville, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Benton town,23,011,04475
+78850,,710,"Waterville, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Oakland town,23,011,54560
+78850,,710,"Waterville, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Waterville city,23,011,80740
+78850,,710,"Waterville, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Winslow town,23,011,86515
+78850,,710,"Waterville, ME",Micropolitan NECTA,,"Augusta-Waterville, ME",Fairfield town,23,025,24320
+79300,,790,"Willimantic, CT",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Lebanon town,09,011,42390
+79300,,790,"Willimantic, CT",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Scotland town,09,015,67400
+79300,,790,"Willimantic, CT",Micropolitan NECTA,,"Springfield-Hartford-East Hartford, MA-CT",Windham town,09,015,86790
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Brooklyn town,09,015,09190
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Eastford town,09,015,21860
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Killingly town,09,015,40500
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Plainfield town,09,015,59980
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Pomfret town,09,015,61030
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Putnam town,09,015,62710
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Sterling town,09,015,73420
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Thompson town,09,015,75870
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Woodstock town,09,015,88190
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Brimfield town,25,013,08470
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Holland town,25,013,30665
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Auburn town,25,027,02760
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Barre town,25,027,03740
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Boylston town,25,027,07525
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Brookfield town,25,027,09105
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Charlton town,25,027,12715
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Clinton town,25,027,14395
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Douglas town,25,027,17300
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Dudley town,25,027,17685
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",East Brookfield town,25,027,18560
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Grafton town,25,027,26430
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Hardwick town,25,027,28740
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Holden town,25,027,30560
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Lancaster town,25,027,34165
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Leicester town,25,027,34795
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Millbury town,25,027,41340
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",New Braintree town,25,027,45105
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Northborough town,25,027,46820
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Northbridge town,25,027,46925
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",North Brookfield town,25,027,47135
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Oakham town,25,027,50670
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Oxford town,25,027,51825
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Paxton town,25,027,52420
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Princeton town,25,027,55395
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Rutland town,25,027,58825
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Shrewsbury town,25,027,61800
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Southbridge Town city,25,027,63345
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Spencer town,25,027,66105
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Sterling town,25,027,67385
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Sturbridge town,25,027,68155
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Sutton town,25,027,68610
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Upton town,25,027,71480
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Uxbridge town,25,027,71620
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Webster town,25,027,73895
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Westborough town,25,027,75015
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",West Boylston town,25,027,75155
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",West Brookfield town,25,027,75400
+79600,,715,"Worcester, MA-CT",Metropolitan NECTA,,"Boston-Worcester-Providence, MA-RI-NH-CT-ME",Worcester city,25,027,82000
