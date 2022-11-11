@@ -11,8 +11,8 @@ logger = logging.getLogger(__name__)
 
 
 def load_input_data(
-        occupation_title: str = "All Occupations",
-        data_cache_filepath: str = None,
+    occupation_title: str = "All Occupations",
+    data_cache_filepath: str = None,
 ) -> pd.DataFrame:
     """Load all available data into a single DataFrame.
     Parameters
@@ -51,7 +51,7 @@ def load_input_data(
         df_rent = datasets.load_rent()
         df_income = datasets.load_income(occupation_title=occupation_title)
         df_house_prices = datasets.load_house_prices()
-        df_climate = datasets.load_climate_date()
+        df_climate = datasets.load_climate_data()
 
         # Merge all datasets together
         df_input = df_uscities.copy()

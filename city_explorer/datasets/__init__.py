@@ -11,6 +11,7 @@ from .data_processing import (
     load_house_prices,
     load_labor_shed,
     load_age_and_gender_data,
+    load_climate_data,
 )
 
 from .data_processing import unique_occupations
