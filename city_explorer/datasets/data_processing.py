@@ -105,9 +105,8 @@ def load_uscities() -> pd.DataFrame:
 
 def load_climate_data() -> pd.DataFrame:
     """Load and process us climate data."""
-    df = pd.read_csv(CLIMATE_FILE)
-
-    df = df[~(df["Jan_max_temp"] == 999)]
+    df = pd.read_csv(CLIMATE_FILE, encoding="ISO-8859-1")
+    df = df[df["Jan_max_temp"] != 999]
 
     return df
 
@@ -138,7 +137,7 @@ def load_political() -> pd.DataFrame:
 
 def load_age_and_gender_data() -> pd.DataFrame:
     """Load and process demographic dataset."""
-    df_demographic = pd.read_csv(DEMOGRAPHIC_FILE)
+    df_demographic = pd.read_csv(DEMOGRAPHIC_FILE, encoding="ISO-8859-1")
 
     # County fips is STATE_CODE + COUNTY_CODE (always 3 digits)
     df_demographic["county_fips"] = _feature_county_fips(
