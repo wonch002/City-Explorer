@@ -52,6 +52,8 @@ def load_input_data(
         df_income = datasets.load_income(occupation_title=occupation_title)
         df_house_prices = datasets.load_house_prices()
         df_climate = datasets.load_climate_data()
+        df_political = datasets.load_political()
+        df_education = datasets.load_education()
 
         # Merge all datasets together
         df_input = df_uscities.copy()
@@ -90,6 +92,18 @@ def load_input_data(
             left_on="county_fips",
             right_on="county_fips",
             how="inner",
+        )
+        df_input = df_input.merge(
+            right=df_education,
+            left_on="county_fips",
+            right_on="FIPS",
+            how="inner"
+        )
+        df_input = df_input.merge(
+            right=df_political,
+            left_on="county_fips",
+            right_on="county_fips",
+            how="inner"
         )
 
         if data_cache_filepath is not None:
