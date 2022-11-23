@@ -17,12 +17,11 @@ NECTA_TO_COUNTYFIPS_FILE = os.path.join(DATAPATH, "necta_to_countyfips.csv")
 INCOME_FILE = os.path.join(DATAPATH, "MSA_M2021_dl.csv")
 
 # Education
-EDUCATION_FILE = os.path.join(os.path.dirname(__file__), "education/Education.xlsx")
+EDUCATION_FILE = os.path.join(DATAPATH, "Education.xlsx")
 
 # Political
-POLITICAL_FILE = os.path.join(
-    os.path.dirname(__file__), "political/countypres_2020.csv"
-)
+
+POLITICAL_FILE = os.path.join(DATAPATH, "countypres_2020.csv")
 
 # Rental
 RENT_FILE = os.path.join(DATAPATH, "FY2023_FMR_50_county.csv")

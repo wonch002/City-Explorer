@@ -393,3 +393,261 @@
 2022-11-16,02:33:25 [DEBUG] (state.py:state:635): Returning value '[]'
 2022-11-16,02:33:25 [DEBUG] (state.py:state:148): Collected endpoints: {}
 2022-11-16,02:33:25 [INFO] (web.py:web:2239): 200 GET /endpoints (::1) 4.00ms
+2022-11-16,19:26:14 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2022-11-16,19:26:14 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2022-11-16,19:26:14 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2022-11-16,19:26:14 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2022-11-16,19:26:14 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2022-11-16,19:26:14 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2022-11-16,19:26:14 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2022-11-16,19:26:14 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2022-11-16,19:26:14 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:26:14 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2022-11-16,19:26:14 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:26:14 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2022-11-16,19:26:14 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:26:14 [DEBUG] (state.py:state:613): Loading option 'Description' from section [Service Info]...
+2022-11-16,19:26:14 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:26:14 [DEBUG] (state.py:state:613): Loading option 'Creation Time' from section [Service Info]...
+2022-11-16,19:26:14 [DEBUG] (state.py:state:635): Returning value '0'
+2022-11-16,19:26:14 [DEBUG] (state.py:state:613): Loading option 'Name' from section [Service Info]...
+2022-11-16,19:26:14 [DEBUG] (state.py:state:635): Returning value 'TabPy Server'
+2022-11-16,19:26:14 [INFO] (web.py:web:2239): 304 GET /info (::1) 7.00ms
+2022-11-16,19:26:14 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2022-11-16,19:26:14 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2022-11-16,19:26:14 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2022-11-16,19:26:14 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2022-11-16,19:26:14 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2022-11-16,19:26:14 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2022-11-16,19:26:14 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2022-11-16,19:26:14 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2022-11-16,19:26:14 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:26:14 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2022-11-16,19:26:14 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:26:14 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2022-11-16,19:26:14 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:26:14 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2022-11-16,19:26:14 [DEBUG] (state.py:state:635): Returning value '[]'
+2022-11-16,19:26:14 [DEBUG] (state.py:state:148): Collected endpoints: {}
+2022-11-16,19:26:14 [INFO] (web.py:web:2239): 304 GET /endpoints (::1) 5.00ms
+2022-11-16,19:27:00 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2022-11-16,19:27:00 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2022-11-16,19:27:00 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2022-11-16,19:27:00 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2022-11-16,19:27:00 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2022-11-16,19:27:00 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2022-11-16,19:27:00 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2022-11-16,19:27:00 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2022-11-16,19:27:00 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:27:00 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2022-11-16,19:27:00 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:27:00 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2022-11-16,19:27:00 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:27:00 [DEBUG] (state.py:state:613): Loading option 'Description' from section [Service Info]...
+2022-11-16,19:27:00 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:27:00 [DEBUG] (state.py:state:613): Loading option 'Creation Time' from section [Service Info]...
+2022-11-16,19:27:00 [DEBUG] (state.py:state:635): Returning value '0'
+2022-11-16,19:27:00 [DEBUG] (state.py:state:613): Loading option 'Name' from section [Service Info]...
+2022-11-16,19:27:00 [DEBUG] (state.py:state:635): Returning value 'TabPy Server'
+2022-11-16,19:27:00 [INFO] (web.py:web:2239): 200 GET /info (127.0.0.1) 6.00ms
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2022-11-16,19:32:07 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2022-11-16,19:32:07 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2022-11-16,19:32:07 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value '[]'
+2022-11-16,19:32:07 [DEBUG] (state.py:state:148): Collected endpoints: {}
+2022-11-16,19:32:07 [INFO] (web.py:web:2239): 200 GET /endpoints (::1) 6.14ms
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2022-11-16,19:32:07 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2022-11-16,19:32:07 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2022-11-16,19:32:07 [INFO] (web.py:web:2239): 200 GET /configurations/endpoint_upload_destination (::1) 1.99ms
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2022-11-16,19:32:07 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2022-11-16,19:32:07 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value '[]'
+2022-11-16,19:32:07 [DEBUG] (state.py:state:148): Collected endpoints: {}
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Adding endpoint "add"
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Adding/updating model add...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value '[]'
+2022-11-16,19:32:07 [DEBUG] (state.py:state:148): Collected endpoints: {}
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value '[]'
+2022-11-16,19:32:07 [DEBUG] (state.py:state:148): Collected endpoints: {}
+2022-11-16,19:32:07 [INFO] (state.py:state:642): Writing state to config
+2022-11-16,19:32:07 [DEBUG] (util.py:util:19): State path is C:\Users\matth\AppData\Local\Programs\Python\Python39\Lib\site-packages\tabpy\tabpy_server
+2022-11-16,19:32:07 [INFO] (state.py:state:642): Writing state to config
+2022-11-16,19:32:07 [DEBUG] (util.py:util:19): State path is C:\Users\matth\AppData\Local\Programs\Python\Python39\Lib\site-packages\tabpy\tabpy_server
+2022-11-16,19:32:07 [INFO] (base_handler.py:base_handler:115): Loading state from state file
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value '['add']'
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Service Versions]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value '{"description": "Adds together two inputs, x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1668648727, "last_modified_time": 1668648727, "schema": null}'
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Docstrings]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2022-11-16,19:32:07 [DEBUG] (state.py:state:148): Collected endpoints: {'add': {'description': 'Adds together two inputs, x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1668648727, 'last_modified_time': 1668648727, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value '['add']'
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Service Versions]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value '{"description": "Adds together two inputs, x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1668648727, "last_modified_time": 1668648727, "schema": null}'
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Docstrings]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2022-11-16,19:32:07 [DEBUG] (state.py:state:148): Collected endpoints: {'add': {'description': 'Adds together two inputs, x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1668648727, 'last_modified_time': 1668648727, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2022-11-16,19:32:07 [DEBUG] (python_service.py:python_service:39): Received request LoadObject
+2022-11-16,19:32:07 [INFO] (python_service.py:python_service:132): Received load message for object already loaded
+2022-11-16,19:32:07 [ERROR] (python_service.py:python_service:164): <lambda>() missing 1 required positional argument: 'host'
+Traceback (most recent call last):
+  File "C:\Users\matth\AppData\Local\Programs\Python\Python39\lib\site-packages\tabpy\tabpy_server\psws\python_service.py", line 134, in load_object
+    return DownloadSkipped(
+TypeError: <lambda>() missing 1 required positional argument: 'host'
+2022-11-16,19:32:07 [ERROR] (python_service.py:python_service:165): Unable to load QueryObject: path=C:\Users\matth\AppData\Local\Programs\Python\Python39\Lib\site-packages\tabpy\tabpy_server/query_objects/add/1, error=<lambda>() missing 1 required positional argument: 'host'
+2022-11-16,19:32:07 [DEBUG] (python_service.py:python_service:53): Returning response LoadFailed(uri='add', version=1, error_msg="<lambda>() missing 1 required positional argument: 'host'")
+2022-11-16,19:32:07 [INFO] (callbacks.py:callbacks:24): Waiting for object to be loaded...
+2022-11-16,19:32:07 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2022-11-16,19:32:07 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'add': {'version': 1, 'type': 'model', 'status': 'LoadFailed', 'reason': "<lambda>() missing 1 required positional argument: 'host'"}})
+2022-11-16,19:32:07 [INFO] (callbacks.py:callbacks:35): Object load status: LoadFailed
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Endpoint add successfully added
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Service Versions]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value '{"description": "Adds together two inputs, x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1668648727, "last_modified_time": 1668648727, "schema": null}'
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Docstrings]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2022-11-16,19:32:07 [DEBUG] (state.py:state:148): Collected endpoints: {'add': {'description': 'Adds together two inputs, x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1668648727, 'last_modified_time': 1668648727, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2022-11-16,19:32:07 [INFO] (web.py:web:2239): 201 POST /endpoints (::1) 27.00ms
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2022-11-16,19:32:07 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2022-11-16,19:32:07 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2022-11-16,19:32:07 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:32:07 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2022-11-16,19:32:07 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:32:07 [DEBUG] (base_handler.py:base_handler:115): Found models: {'add': {'version': 1, 'type': 'model', 'status': 'LoadFailed', 'last_error': "<lambda>() missing 1 required positional argument: 'host'"}}
+2022-11-16,19:32:07 [INFO] (web.py:web:2239): 200 GET /status (::1) 3.00ms
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2022-11-16,19:32:25 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2022-11-16,19:32:25 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2022-11-16,19:32:25 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '['add']'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Service Versions]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '{"description": "Adds together two inputs, x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1668648727, "last_modified_time": 1668648727, "schema": null}'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Docstrings]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:148): Collected endpoints: {'add': {'description': 'Adds together two inputs, x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1668648727, 'last_modified_time': 1668648727, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2022-11-16,19:32:25 [INFO] (web.py:web:2239): 200 GET /endpoints (::1) 7.00ms
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2022-11-16,19:32:25 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2022-11-16,19:32:25 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2022-11-16,19:32:25 [INFO] (web.py:web:2239): 200 GET /configurations/endpoint_upload_destination (::1) 2.90ms
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2022-11-16,19:32:25 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2022-11-16,19:32:25 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Processing PUT for /endpoints/add
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Service Versions]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '{"description": "Adds together two inputs, x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1668648727, "last_modified_time": 1668648727, "schema": null}'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Docstrings]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:148): Collected endpoints: {'add': {'description': 'Adds together two inputs, x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1668648727, 'last_modified_time': 1668648727, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2022-11-16,19:32:25 [INFO] (base_handler.py:base_handler:115): Endpoint info: {'dependencies': [], 'version': 2, 'type': 'model', 'src_path': 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\tabpy\\tabpy_server\\staging\\endpoints\\add\\2', 'name': 'add', 'required_files': [], 'methods': [{'method': 'query'}], 'required_packages': [], 'description': 'Adds together two inputs, x and y'}
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Adding/updating model add...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '['add']'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Service Versions]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '{"description": "Adds together two inputs, x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1668648727, "last_modified_time": 1668648727, "schema": null}'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Docstrings]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:148): Collected endpoints: {'add': {'description': 'Adds together two inputs, x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1668648727, 'last_modified_time': 1668648727, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '['add']'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Service Versions]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '{"description": "Adds together two inputs, x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1668648727, "last_modified_time": 1668648727, "schema": null}'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Docstrings]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:148): Collected endpoints: {'add': {'description': 'Adds together two inputs, x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1668648727, 'last_modified_time': 1668648727, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2022-11-16,19:32:25 [INFO] (state.py:state:642): Writing state to config
+2022-11-16,19:32:25 [DEBUG] (util.py:util:19): State path is C:\Users\matth\AppData\Local\Programs\Python\Python39\Lib\site-packages\tabpy\tabpy_server
+2022-11-16,19:32:25 [INFO] (state.py:state:642): Writing state to config
+2022-11-16,19:32:25 [DEBUG] (util.py:util:19): State path is C:\Users\matth\AppData\Local\Programs\Python\Python39\Lib\site-packages\tabpy\tabpy_server
+2022-11-16,19:32:25 [INFO] (base_handler.py:base_handler:115): Loading state from state file
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '['add']'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Service Versions]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '{"description": "Adds together two inputs, x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1668648727, "last_modified_time": 1668648745, "schema": null}'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Docstrings]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:148): Collected endpoints: {'add': {'description': 'Adds together two inputs, x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1668648727, 'last_modified_time': 1668648745, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '['add']'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Service Versions]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '{"description": "Adds together two inputs, x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1668648727, "last_modified_time": 1668648745, "schema": null}'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Docstrings]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:148): Collected endpoints: {'add': {'description': 'Adds together two inputs, x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1668648727, 'last_modified_time': 1668648745, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2022-11-16,19:32:25 [DEBUG] (python_service.py:python_service:39): Received request LoadObject
+2022-11-16,19:32:25 [DEBUG] (python_service.py:python_service:53): Returning response LoadInProgress(uri='add', path='C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\tabpy\\tabpy_server/query_objects/add/2', version=2, is_update=True, endpoint_type='model')
+2022-11-16,19:32:25 [INFO] (python_service.py:python_service:89): Loading object:, URI=add, URL=C:\Users\matth\AppData\Local\Programs\Python\Python39\Lib\site-packages\tabpy\tabpy_server/query_objects/add/2, version=2, is_updated=True
+2022-11-16,19:32:25 [INFO] (callbacks.py:callbacks:24): Waiting for object to be loaded...
+2022-11-16,19:32:25 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2022-11-16,19:32:25 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'add': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': "<lambda>() missing 1 required positional argument: 'host'"}})
+2022-11-16,19:32:25 [INFO] (query_object.py:query_object:80): Loaded query object "CustomQueryObject" successfully
+2022-11-16,19:32:25 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2022-11-16,19:32:25 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'add': {'version': 2, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}})
+2022-11-16,19:32:25 [INFO] (callbacks.py:callbacks:35): Object load status: LoadSuccessful
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Service Versions]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '{"description": "Adds together two inputs, x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1668648727, "last_modified_time": 1668648745, "schema": null}'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'add' from section [Query Objects Docstrings]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2022-11-16,19:32:25 [DEBUG] (state.py:state:148): Collected endpoints: {'add': {'description': 'Adds together two inputs, x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1668648727, 'last_modified_time': 1668648745, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2022-11-16,19:32:25 [INFO] (web.py:web:2239): 200 PUT /endpoints/add (::1) 148.00ms
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2022-11-16,19:32:25 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2022-11-16,19:32:25 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2022-11-16,19:32:25 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:32:25 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2022-11-16,19:32:25 [DEBUG] (state.py:state:635): Returning value ''
+2022-11-16,19:32:25 [DEBUG] (base_handler.py:base_handler:115): Found models: {'add': {'version': 2, 'type': 'model', 'status': 'LoadSuccessful', 'last_error': None}}
+2022-11-16,19:32:25 [INFO] (web.py:web:2239): 200 GET /status (::1) 3.00ms
