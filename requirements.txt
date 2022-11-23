@@ -6,3 +6,4 @@ plotly-geo
 geopandas
 pyshp
 shapely
+tabpy
