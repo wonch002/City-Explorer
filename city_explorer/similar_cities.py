@@ -168,14 +168,33 @@ def predict_similar_cities(
     city_id: int,
     occupation_title: str,
     *sliders: List[float],  # TODO
-    limit: int = 20,
+    limit: int = None,
 ):
-    """Compute similar cities based on the given criteria."""
+    """Compute similar cities based on the given criteria.
+
+    Parameters
+    ----------
+    city_id : int
+        The id of the selected city.
+
+    occupation_title : str
+        The name of the selected occupation. On the frontend, the default should be
+        `All Occupations`
+
+    *sliders : List[float]
+        A list of slider values which correspond the users importances of each feature.
+
+    limit : int, optional
+        The number of similar cities to show. Default is no limit.
+
+    """
     df_input = data_loader.load_input_data(occupation_title=occupation_title)
     feature_weights = get_feature_weights(*sliders)
     similar_cities_estimator = SimilarCities(feature_weights=feature_weights)
     similar_cities_estimator.fit(df_input)
 
     similar_cities = similar_cities_estimator.predict(data=df_input, city_id=city_id)
+    if limit is not None:
+        similar_cities = similar_cities.iloc[:limit]
 
-    return similar_cities.iloc[:limit].copy()
+    return similar_cities.copy()
