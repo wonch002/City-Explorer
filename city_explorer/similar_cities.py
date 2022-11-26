@@ -169,7 +169,7 @@ def predict_similar_cities(
     occupation_title: str,
     *sliders: List[float],  # TODO
     limit: int = None,
-):
+) -> pd.Series:
     """Compute similar cities based on the given criteria.
 
     Parameters
@@ -187,6 +187,16 @@ def predict_similar_cities(
     limit : int, optional
         The number of similar cities to show. Default is no limit.
 
+    Returns
+    -------
+    pd.Series
+        An ordered series which contains the similairty score for each city based on
+        the specified criteria.
+
+        Index : int
+            city_id
+        Value : float
+            Similarity score
     """
     df_input = data_loader.load_input_data(occupation_title=occupation_title)
     feature_weights = get_feature_weights(*sliders)
