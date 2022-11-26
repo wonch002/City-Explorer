@@ -198,12 +198,24 @@ def predict_similar_cities(
         Value : float
             Similarity score
     """
+    # Load data and extract feature weights
     df_input = data_loader.load_input_data(occupation_title=occupation_title)
     feature_weights = get_feature_weights(*sliders)
-    similar_cities_estimator = SimilarCities(feature_weights=feature_weights)
+
+    # Create an estimator which will determine the similar cities and fit the standard
+    # scaler.
+    # NOTE: If you want to update the distance function or scaler, overwrite it here
+    similar_cities_estimator = SimilarCities(
+        similarity_func=euclidean_distances,
+        scaler=StandardScaler,
+        feature_weights=feature_weights,
+    )
     similar_cities_estimator.fit(df_input)
 
+    # Predict similar cities for a given city_id
     similar_cities = similar_cities_estimator.predict(data=df_input, city_id=city_id)
+
+    # Apply any limits
     if limit is not None:
         similar_cities = similar_cities.iloc[:limit]
 
