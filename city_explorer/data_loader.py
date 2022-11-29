@@ -37,6 +37,7 @@ def load_input_data(
         return
     else:
         # Load all data
+
         reset_cache = not use_cache
         df_uscities = datasets.load_uscities(reset_cache=reset_cache)
         df_laborshed = datasets.load_labor_shed(reset_cache=reset_cache)
@@ -48,6 +49,8 @@ def load_input_data(
         )
         df_house_prices = datasets.load_house_prices(reset_cache=reset_cache)
         df_climate = datasets.load_climate_data(reset_cache=reset_cache)
+        df_political = datasets.load_political()
+        df_education = datasets.load_education()
 
         # Merge all datasets together
         df_input = df_uscities.copy()
@@ -83,6 +86,15 @@ def load_input_data(
         )
         df_input = df_input.merge(
             right=df_house_prices,
+            left_on="county_fips",
+            right_on="county_fips",
+            how="inner",
+        )
+        df_input = df_input.merge(
+            right=df_education, left_on="county_fips", right_on="FIPS", how="inner"
+        )
+        df_input = df_input.merge(
+            right=df_political,
             left_on="county_fips",
             right_on="county_fips",
             how="inner",
