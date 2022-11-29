@@ -158,16 +158,17 @@ def get_feature_weights(*sliders):
     """Compute feature weights given the slider inputs."""
     # TODO:
     return dict(
-        population=1,
-        home_price_5yr_median=10,  # 10x as important
-        A_MEDIAN=1,
+        population=0.5,
+        income_surplus=10,  # 10x as important
+        home_price_5yr_median=0.5,
+        A_MEDIAN=0.5,
     )
 
 
 def predict_similar_cities(
     city_id: int,
     occupation_title: str,
-    *sliders: List[float],  # TODO
+    sliders: List[float],  # TODO
     limit: int = None,
 ) -> pd.Series:
     """Compute similar cities based on the given criteria.
@@ -181,7 +182,7 @@ def predict_similar_cities(
         The name of the selected occupation. On the frontend, the default should be
         `All Occupations`
 
-    *sliders : List[float]
+    sliders : List[float]
         A list of slider values which correspond the users importances of each feature.
 
     limit : int, optional
@@ -197,9 +198,20 @@ def predict_similar_cities(
             city_id
         Value : float
             Similarity score
+
+    Example
+    -------
+    >>> similar_cities.predict_similar_cities(
+        city_id=1840006830,
+        occupation_title="Data Scientists",
+        sliders=[0.5],
+        limit=30,
+    )
     """
     # Load data and extract feature weights
-    df_input = data_loader.load_input_data(occupation_title=occupation_title)
+    df_input = data_loader.load_input_data(
+        occupation_title=occupation_title, use_cache=True
+    )
     feature_weights = get_feature_weights(*sliders)
 
     # Create an estimator which will determine the similar cities and fit the standard

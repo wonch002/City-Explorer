@@ -99,4 +99,9 @@ def load_input_data(
             how="inner",
         )
 
+        # Compute income surplus
+        df_input["income_surplus"] = (
+            df_input["A_MEDIAN"] - df_input["home_price_5yr_median"] / 30
+        )
+
     return df_input
