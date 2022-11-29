@@ -59,9 +59,9 @@ def load_input_data(
         df_input = df_uscities.copy()
         df_input = df_input.merge(
             right=df_climate,
-            left_on="city",
-            right_on="city",
-            how="inner",
+            left_on=["state_id","city"],
+            right_on=["state_id","city"],
+            how="left",
         )
         df_input = df_input.merge(
             right=df_laborshed,
