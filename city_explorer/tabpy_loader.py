@@ -13,6 +13,7 @@ def start_tabpy_server():
     result = sock.connect_ex(("localhost", 9004))
     # Only start if the server is not already running
     if result != 0:
+        print("Starting TabPy server.")
         if platform.system() == "Windows":
             assert os.system("start cmd /c tabpy") == 0, "Tabpy server failed to start!"
         elif platform.system() == "Darwin":
@@ -28,7 +29,9 @@ def start_tabpy_server():
             raise NotImplementedError(f"{platform.system()} is not supported.")
         time.sleep(1)  # Give the server time to fully start
     else:
-        print("Server already running.")
+        print("TabPy server is already running.")
+
+    print("TabPy server is running at http://localhost:9004/")
 
 
 start_tabpy_server()
