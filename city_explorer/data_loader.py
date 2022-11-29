@@ -12,17 +12,19 @@ logger = logging.getLogger(__name__)
 
 def load_input_data(
     occupation_title: str = "All Occupations",
-    data_cache_filepath: str = None,
+    use_cache: bool = True,
 ) -> pd.DataFrame:
     """Load all available data into a single DataFrame.
+
     Parameters
     ----------
     occupation_title : str, optional
         The title of the occupation to load the income data for. Default is
         'All Occupations'. Pass "help" to display all possible values.
-    data_cache_filepath : str, optional
-        The name of a file to save/load your data extract from. Default behavior is
-        None.
+
+    use_cache : bool, optional
+        Whether to use a cached dataset or not. Default behavior is True.
+
     Returns
     -------
     pd.DataFrame
@@ -33,34 +35,28 @@ def load_input_data(
         formatted_help_msg = "\n" + "\n".join(unique_occupations)
         logger.info(formatted_help_msg)
         return
-
-    if data_cache_filepath is not None:
-        data_cache_filepath = os.path.join(
-            datasets.CACHE_FOLDER,
-            data_cache_filepath,
-        )
-
-    if data_cache_filepath is not None and os.path.exists(data_cache_filepath):
-        logger.info("Reading data from cache: %s", data_cache_filepath)
-        df_input = pd.read_parquet(data_cache_filepath)
     else:
         # Load all data
-        df_uscities = datasets.load_uscities()
-        df_laborshed = datasets.load_labor_shed()
-        df_age_and_gender = datasets.load_age_and_gender_data()
-        df_rent = datasets.load_rent()
-        df_income = datasets.load_income(occupation_title=occupation_title)
-        df_house_prices = datasets.load_house_prices()
-        df_climate = datasets.load_climate_data()
-        df_political = datasets.load_political()
-        df_education = datasets.load_education()
+        reset_cache = not use_cache
+        df_uscities = datasets.load_uscities(reset_cache=reset_cache)
+        df_laborshed = datasets.load_labor_shed(reset_cache=reset_cache)
+        df_age_and_gender = datasets.load_age_and_gender_data(reset_cache=reset_cache)
+        df_rent = datasets.load_rent(reset_cache=reset_cache)
+        df_income = datasets.load_income(
+            reset_cache=reset_cache,
+            occupation_title=occupation_title,
+        )
+        df_house_prices = datasets.load_house_prices(reset_cache=reset_cache)
+        df_climate = datasets.load_climate_data(reset_cache=reset_cache)
+        df_political = datasets.load_political(reset_cache=reset_cache)
+        df_education = datasets.load_education(reset_cache=reset_cache)
 
         # Merge all datasets together
         df_input = df_uscities.copy()
         df_input = df_input.merge(
             right=df_climate,
-            left_on="city",
-            right_on="city",
+            left_on=["city", "state_id"],
+            right_on=["city", "state_id"],
             how="inner",
         )
         df_input = df_input.merge(
@@ -94,23 +90,13 @@ def load_input_data(
             how="inner",
         )
         df_input = df_input.merge(
-            right=df_education,
-            left_on="county_fips",
-            right_on="FIPS",
-            how="inner"
+            right=df_education, left_on="county_fips", right_on="FIPS", how="inner"
         )
         df_input = df_input.merge(
             right=df_political,
             left_on="county_fips",
             right_on="county_fips",
-            how="inner"
+            how="inner",
         )
-
-        if data_cache_filepath is not None:
-            dirname = os.path.dirname(data_cache_filepath)
-            if not os.path.exists(dirname):
-                os.makedirs(dirname)
-
-            df_input.to_parquet(data_cache_filepath)
 
     return df_input
