@@ -37,16 +37,17 @@ def load_input_data(
         return
     else:
         # Load all data
-        df_uscities = datasets.load_uscities(reset_cache=use_cache)
-        df_laborshed = datasets.load_labor_shed(reset_cache=use_cache)
-        df_age_and_gender = datasets.load_age_and_gender_data(reset_cache=use_cache)
-        df_rent = datasets.load_rent(reset_cache=use_cache)
+        reset_cache = not use_cache
+        df_uscities = datasets.load_uscities(reset_cache=reset_cache)
+        df_laborshed = datasets.load_labor_shed(reset_cache=reset_cache)
+        df_age_and_gender = datasets.load_age_and_gender_data(reset_cache=reset_cache)
+        df_rent = datasets.load_rent(reset_cache=reset_cache)
         df_income = datasets.load_income(
-            reset_cache=use_cache,
+            reset_cache=reset_cache,
             occupation_title=occupation_title,
         )
-        df_house_prices = datasets.load_house_prices(reset_cache=use_cache)
-        df_climate = datasets.load_climate_data(reset_cache=use_cache)
+        df_house_prices = datasets.load_house_prices(reset_cache=reset_cache)
+        df_climate = datasets.load_climate_data(reset_cache=reset_cache)
 
         # Merge all datasets together
         df_input = df_uscities.copy()
