@@ -69,7 +69,7 @@ class SimilarCities:
         self,
         similarity_func: Callable = euclidean_distances,
         scaler: BaseEstimator = StandardScaler,
-        feature_weights: Dict[str, float] = ModuleNotFoundError,
+        feature_weights: Dict[str, float] = None,
     ):
         """Initialize the SimilarCities object.
 
@@ -81,8 +81,9 @@ class SimilarCities:
         scaler : BaseEstimator
             A scaler which describes how to normalize the dataset.
 
-        feature_weights : Dict[str, float]
-            A dictionary which maps a feature to its corresponding weight.
+        feature_weights : Dict[str, float], optional
+            A dictionary which maps a feature to its corresponding weight. Default is to include 
+            all numerical values.
         """
         self.similarity_func = similarity_func
         self.scaler = scaler()
