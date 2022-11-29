@@ -8,6 +8,9 @@ cache
 # Jupyter Notebook dev
 *.ipynb
 
+
+tabpy_log.log
+
 # compressed pandas data
 *.parquet
 
