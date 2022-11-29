@@ -9,7 +9,7 @@ tabpy_log.log
 *.ipynb
 
 # compressed pandas data
-*.parquet
+# *.parquet
 
 # Ignore all JSON files
 *.json
