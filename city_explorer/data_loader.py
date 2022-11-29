@@ -49,8 +49,8 @@ def load_input_data(
         )
         df_house_prices = datasets.load_house_prices(reset_cache=reset_cache)
         df_climate = datasets.load_climate_data(reset_cache=reset_cache)
-        df_political = datasets.load_political()
-        df_education = datasets.load_education()
+        df_political = datasets.load_political(reset_cache=reset_cache)
+        df_education = datasets.load_education(reset_cache=reset_cache)
 
         # Merge all datasets together
         df_input = df_uscities.copy()
