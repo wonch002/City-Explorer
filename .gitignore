@@ -3,13 +3,10 @@
 *.xlsx
 *.xls
 !city_explorer/datasets/cities/uscities.csv
-cache
+tabpy_log.log
 
 # Jupyter Notebook dev
 *.ipynb
-
-
-tabpy_log.log
 
 # compressed pandas data
 *.parquet
