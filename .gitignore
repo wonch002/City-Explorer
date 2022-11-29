@@ -3,13 +3,13 @@
 *.xlsx
 *.xls
 !city_explorer/datasets/cities/uscities.csv
-cache
+tabpy_log.log
 
 # Jupyter Notebook dev
 *.ipynb
 
 # compressed pandas data
-*.parquet
+# *.parquet
 
 # Ignore all JSON files
 *.json
