@@ -108,7 +108,7 @@ def load_climate_data() -> pd.DataFrame:
     """Load and process us climate data."""
     df = pd.read_csv(CLIMATE_FILE, encoding="ISO-8859-1")
     df = df[df["Jan_max_temp"] != 999]
-
+    df = df.drop_duplicates(['state_id', 'city'])
     return df
 
 
