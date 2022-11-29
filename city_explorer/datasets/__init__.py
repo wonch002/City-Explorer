@@ -109,7 +109,7 @@ def reset_cache(n_jobs: int = 1):
 
     This should be called everytime an update is made.
 
-    NOTE: This function takes ~ minutes to run.
+    NOTE: This function takes ~13 minutes to run with 16 jobs on Cameron's computer.
     """
     funcs = [
         load_uscities,
