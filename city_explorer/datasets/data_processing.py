@@ -17,12 +17,10 @@ NECTA_TO_COUNTYFIPS_FILE = os.path.join(DATAPATH, "necta_to_countyfips.csv")
 INCOME_FILE = os.path.join(DATAPATH, "MSA_M2021_dl.csv")
 
 # Education
-EDUCATION_FILE = os.path.join(os.path.dirname(__file__), "education/Education.xlsx")
+EDUCATION_FILE = os.path.join(DATAPATH, "Education.xlsx")
 
 # Political
-POLITICAL_FILE = os.path.join(
-    os.path.dirname(__file__), "political/countypres_2020.csv"
-)
+POLITICAL_FILE = os.path.join(DATAPATH, "countypres_2020.csv")
 
 # Rental
 RENT_FILE = os.path.join(DATAPATH, "FY2023_FMR_50_county.csv")
@@ -312,7 +310,20 @@ def load_age_and_gender_data() -> pd.DataFrame:
 def unique_occupations(format: bool = False) -> np.ndarray:
     """Return all unique occuptions."""
     df_income = pd.read_csv(INCOME_FILE)
+
+    # Excluded occupations
+    excluded = [
+        "Farm Labor Contractors",  # Only 2 counties have this occupation
+        # "Actors",  # Annual income is not available
+        # "Dancers",  # Annual income is not available
+        # "Musicians and Singers",  # Annual income is not available
+        "Disc Jockeys, Except Radio",  # Only 13 counties
+        "Entertainers and Performers, Sports and Related Workers, All Other",  # Only 26 rows
+    ]
     unique_occupations = df_income[["OCC_TITLE", "OCC_CODE"]].drop_duplicates()
+    unique_occupations = unique_occupations[
+        ~unique_occupations["OCC_TITLE"].isin(excluded)
+    ]
     unique_occupations["OCC_CODE"] = (
         unique_occupations["OCC_CODE"].str.replace("-", "").astype(int)
     )
@@ -337,13 +348,16 @@ def unique_occupations(format: bool = False) -> np.ndarray:
 
 def load_income(occupation_title: str = "All Occupations") -> pd.DataFrame:
     """Load and process dataset for income.
+
     Processing of income data includes imputing missing income with the average income
     values of the three nearest counties.
+
     Parameters
     ----------
     occupation_title : str, optional
         The title of the occupation to load the income data for. Default is
         'All Occupations'.
+
     Returns
     -------
     pd.DataFrame
@@ -394,32 +408,36 @@ def load_income(occupation_title: str = "All Occupations") -> pd.DataFrame:
         how="inner",
     )
 
+    # Only keep median income
     columns_to_keep = [
         "county_fips",
-        "H_MEAN",
-        "A_MEAN",
-        "H_PCT10",
-        "H_PCT25",
+        # "A_MEAN",
+        # "H_MEAN",
+        # "H_PCT10",
+        # "H_PCT25",
         "H_MEDIAN",
-        "H_PCT75",
-        "H_PCT90",
-        "A_PCT10",
-        "A_PCT25",
+        # "H_PCT75",
+        # "H_PCT90",
+        # "A_PCT10",
+        # "A_PCT25",
         "A_MEDIAN",
-        "A_PCT75",
-        "A_PCT90",
+        # "A_PCT75",
+        # "A_PCT90",
     ]
 
     df_income_filtered = df_income_filtered[columns_to_keep]
 
+    # *  = indicates that a wage estimate is not available
+    # **  = indicates that an employment estimate is not available
+    df_income_filtered = df_income_filtered[
+        ~df_income_filtered["H_MEDIAN"].isin(["*", "**"])
+        | ~df_income_filtered["A_MEDIAN"].isin(["*", "**"])
+    ]
     # Process all columns
     for col in columns_to_keep:
         if col != "county_fips":
-            # *  = indicates that a wage estimate is not available
-            # **  = indicates that an employment estimate is not available
-            df_income_filtered = df_income_filtered[
-                ~df_income_filtered[col].isin(["*", "**"])
-            ]
+            df_income_filtered[col] = df_income_filtered[col].replace("*", np.nan)
+            df_income_filtered[col] = df_income_filtered[col].replace("**", np.nan)
 
             # "#  = indicates a wage equal to or greater than $100.00 per hour or
             # $208,000 per year ",,,,
@@ -431,6 +449,12 @@ def load_income(occupation_title: str = "All Occupations") -> pd.DataFrame:
             df_income_filtered[col] = (
                 df_income_filtered[col].str.replace(",", "").astype(float)
             )
+
+    # Convert hourly to annual and coalesce
+    df_income_filtered["A_MEDIAN"] = df_income_filtered["A_MEDIAN"].combine_first(
+        df_income_filtered["H_MEDIAN"] * 40 * 52  # 40hrs per week, 52 weeks per year
+    )
+    df_income_filtered = df_income_filtered[["A_MEDIAN", "county_fips"]]
 
     # Collapse duplicated counties into their mean. This happens b/c the mapping from
     # msa_code -> county_fips is not neccessarily 1:1
