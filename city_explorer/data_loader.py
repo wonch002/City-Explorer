@@ -37,7 +37,6 @@ def load_input_data(
         return
     else:
         # Load all data
-
         reset_cache = not use_cache
         df_uscities = datasets.load_uscities(reset_cache=reset_cache)
         df_laborshed = datasets.load_labor_shed(reset_cache=reset_cache)
