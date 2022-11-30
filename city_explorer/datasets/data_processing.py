@@ -190,7 +190,26 @@ def load_education() -> pd.DataFrame:
     # Convert percent figures to decimals
     df_education.iloc[:, 1:5] = df_education.iloc[:, 1:5].div(100)
 
-    return df_education
+    # Column mapping
+    columns_to_rename = {
+        "FIPS": "county_fips",
+        "Percent of adults with less than a high school diploma, 2016-20": "less_than_highschool",
+        "Percent of adults with a high school diploma only, 2016-20": "high_school",
+        "Percent of adults completing some college or associate's degree, 2016-20": "some_college",
+        "Percent of adults with a bachelor's degree or higher 2016-20": "bachelors_or_higher",
+    }
+
+    df_education = df_education.rename(columns=columns_to_rename)
+
+    columns_to_keep = [
+        "county_fips",
+        "less_than_highschool",
+        "high_school",
+        "some_college",
+        "bachelors_or_higher",
+    ]
+
+    return df_education[columns_to_keep].copy()
 
 
 def load_political() -> pd.DataFrame:

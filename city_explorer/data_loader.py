@@ -90,7 +90,10 @@ def load_input_data(
             how="inner",
         )
         df_input = df_input.merge(
-            right=df_education, left_on="county_fips", right_on="FIPS", how="inner"
+            right=df_education,
+            left_on="county_fips",
+            right_on="county_fips",
+            how="inner",
         )
         df_input = df_input.merge(
             right=df_political,
