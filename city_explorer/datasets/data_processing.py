@@ -108,7 +108,79 @@ def load_climate_data() -> pd.DataFrame:
     df = pd.read_csv(CLIMATE_FILE, encoding="ISO-8859-1")
     df = df[df["Jan_max_temp"] != 999]
     df = df.drop_duplicates(["state_id", "city"])
-    return df
+
+    # Compute average temperature for each season
+    df["average_winter_temperature"] = (
+        df[["Dec_max_temp", "Dec_min_temp"]].median(axis=1)
+        + df[["Jan_max_temp", "Jan_min_temp"]].median(axis=1)
+        + df[["Feb_max_temp", "Feb_min_temp"]].median(axis=1)
+    ) / 3
+
+    df["average_spring_temperature"] = (
+        df[["Mar_max_temp", "Mar_min_temp"]].median(axis=1)
+        + df[["Apr_max_temp", "Apr_min_temp"]].median(axis=1)
+        + df[["May_max_temp", "May_min_temp"]].median(axis=1)
+    ) / 3
+
+    df["average_summer_temperature"] = (
+        df[["Jun_max_temp", "Jun_min_temp"]].median(axis=1)
+        + df[["Jul_max_temp", "Jul_min_temp"]].median(axis=1)
+        + df[["Aug_max_temp", "Aug_min_temp"]].median(axis=1)
+    ) / 3
+
+    df["average_fall_temperature"] = (
+        df[["Sep_max_temp", "Sep_min_temp"]].median(axis=1)
+        + df[["Oct_max_temp", "Oct_min_temp"]].median(axis=1)
+        + df[["Nov_max_temp", "Nov_min_temp"]].median(axis=1)
+    ) / 3
+
+    df["total_precipitation"] = df[
+        [
+            "Jan_precipitation",
+            "Feb_precipitation",
+            "Mar_precipitation",
+            "Apr_precipitation",
+            "May_precipitation",
+            "Jun_precipitation",
+            "Jul_precipitation",
+            "Aug_precipitation",
+            "Sep_precipitation",
+            "Oct_precipitation",
+            "Nov_precipitation",
+            "Dec_precipitation",
+        ]
+    ].sum(axis=1)
+
+    df["total_snowfall"] = df[
+        [
+            "Jan_snowfall",
+            "Feb_snowfall",
+            "Mar_snowfall",
+            "Apr_snowfall",
+            "May_snowfall",
+            "Jun_snowfall",
+            "Jul_snowfall",
+            "Aug_snowfall",
+            "Sep_snowfall",
+            "Oct_snowfall",
+            "Nov_snowfall",
+            "Dec_snowfall",
+        ]
+    ].sum(axis=1)
+
+    # Return subset of columns
+    columns_to_keep = [
+        "state_id",
+        "city",
+        "average_winter_temperature",
+        "average_spring_temperature",
+        "average_summer_temperature",
+        "average_fall_temperature",
+        "total_precipitation",
+        "total_snowfall",
+    ]
+
+    return df[columns_to_keep].copy()
 
 
 def load_education() -> pd.DataFrame:
@@ -291,6 +363,12 @@ def load_age_and_gender_data() -> pd.DataFrame:
     )
     df_demographic["percent_over_65"] = (
         df_demographic["count_over_65"] / df_demographic["Total"]
+    )
+
+    df_demographic["average_age"] = (
+        df_demographic["percent_under_10"] * 4.5
+        + df_demographic["percent_10_to_20"] * 14.5
+        + df_demographic["percent_20_to_30"] * 24.5
     )
 
     columns_to_keep = [
