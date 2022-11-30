@@ -180,7 +180,11 @@ def load_climate_data() -> pd.DataFrame:
         "total_snowfall",
     ]
 
-    return df[columns_to_keep].copy()
+    # Just drop missing weather. There are 116 of them
+    df = df[columns_to_keep]
+    df = df.dropna()
+
+    return df.copy()
 
 
 def load_education() -> pd.DataFrame:
@@ -388,18 +392,16 @@ def load_age_and_gender_data() -> pd.DataFrame:
         df_demographic["percent_under_10"] * 4.5
         + df_demographic["percent_10_to_20"] * 14.5
         + df_demographic["percent_20_to_30"] * 24.5
+        + df_demographic["percent_30_to_50"] * 39.5
+        + df_demographic["percent_50_to_65"] * 57.5
+        + df_demographic["percent_over_65"] * 70.0
     )
 
     columns_to_keep = [
         "county_fips",
         "percent_male",
         "percent_female",
-        "percent_under_10",  # Children
-        "percent_10_to_20",  # Teens
-        "percent_20_to_30",  # Young adults
-        "percent_30_to_50",  # Middle Aged
-        "percent_50_to_65",  # Older
-        "percent_over_65",  # Retired
+        "average_age",
     ]
     return df_demographic[columns_to_keep]
 

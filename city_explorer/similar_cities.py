@@ -43,7 +43,7 @@ class TransformerPandasSupportMixin:
     def fit(self, X, y=None, sample_weight=None):
         """Apply preprocessing steps before fitting."""
         _X, _y = self._preprocess(X, y)
-        return super().fit(_X, _y, sample_weight)
+        return super().fit(_X, _y)
 
     def fit_transform(self, X, y=None, **fit_params):
         """Apply preprocessing steps before fitting, then apply postprocessing."""
@@ -54,7 +54,7 @@ class TransformerPandasSupportMixin:
     def transform(self, X, copy=None):
         """Apply preprocessing and postprocessing for transforming."""
         _X, _ = self._preprocess(X)
-        x_transformed = super().transform(_X, copy)
+        x_transformed = super().transform(_X)
         return self._postprocess(X, x_transformed)
 
 
@@ -111,7 +111,6 @@ class SimilarCities:
         df_features = df_features.merge(data["id"], left_index=True, right_index=True)
         df_features = df_features.set_index("id")
 
-        # df_features = df_features.dropna(axis=1).copy()
         return df_features
 
     def _apply_feature_weights(self, df_transformed: pd.DataFrame) -> pd.DataFrame:
@@ -161,8 +160,8 @@ class SimilarCities:
 
 def get_feature_weights(*sliders):
     """Compute feature weights given the slider inputs."""
-    # TODO
 
+    # TODO: These sliders should be used to feed the feature weights
     return dict(
         population=1.0,  # Population
         density=1.0,  # Population Denisty
@@ -236,7 +235,7 @@ def predict_similar_cities(
     # NOTE: If you want to update the distance function or scaler, overwrite it here
     similar_cities_estimator = SimilarCities(
         similarity_func=euclidean_distances,
-        scaler=StandardScaler,
+        scaler=MinMaxScaler,
         feature_weights=feature_weights,
     )
     similar_cities_estimator.fit(df_input)
