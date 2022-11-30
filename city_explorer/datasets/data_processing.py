@@ -108,7 +108,83 @@ def load_climate_data() -> pd.DataFrame:
     df = pd.read_csv(CLIMATE_FILE, encoding="ISO-8859-1")
     df = df[df["Jan_max_temp"] != 999]
     df = df.drop_duplicates(["state_id", "city"])
-    return df
+
+    # Compute average temperature for each season
+    df["average_winter_temperature"] = (
+        df[["Dec_max_temp", "Dec_min_temp"]].median(axis=1)
+        + df[["Jan_max_temp", "Jan_min_temp"]].median(axis=1)
+        + df[["Feb_max_temp", "Feb_min_temp"]].median(axis=1)
+    ) / 3
+
+    df["average_spring_temperature"] = (
+        df[["Mar_max_temp", "Mar_min_temp"]].median(axis=1)
+        + df[["Apr_max_temp", "Apr_min_temp"]].median(axis=1)
+        + df[["May_max_temp", "May_min_temp"]].median(axis=1)
+    ) / 3
+
+    df["average_summer_temperature"] = (
+        df[["Jun_max_temp", "Jun_min_temp"]].median(axis=1)
+        + df[["Jul_max_temp", "Jul_min_temp"]].median(axis=1)
+        + df[["Aug_max_temp", "Aug_min_temp"]].median(axis=1)
+    ) / 3
+
+    df["average_fall_temperature"] = (
+        df[["Sep_max_temp", "Sep_min_temp"]].median(axis=1)
+        + df[["Oct_max_temp", "Oct_min_temp"]].median(axis=1)
+        + df[["Nov_max_temp", "Nov_min_temp"]].median(axis=1)
+    ) / 3
+
+    df["total_precipitation"] = df[
+        [
+            "Jan_precipitation",
+            "Feb_precipitation",
+            "Mar_precipitation",
+            "Apr_precipitation",
+            "May_precipitation",
+            "Jun_precipitation",
+            "Jul_precipitation",
+            "Aug_precipitation",
+            "Sep_precipitation",
+            "Oct_precipitation",
+            "Nov_precipitation",
+            "Dec_precipitation",
+        ]
+    ].sum(axis=1)
+
+    df["total_snowfall"] = df[
+        [
+            "Jan_snowfall",
+            "Feb_snowfall",
+            "Mar_snowfall",
+            "Apr_snowfall",
+            "May_snowfall",
+            "Jun_snowfall",
+            "Jul_snowfall",
+            "Aug_snowfall",
+            "Sep_snowfall",
+            "Oct_snowfall",
+            "Nov_snowfall",
+            "Dec_snowfall",
+        ]
+    ].sum(axis=1)
+
+    # Return subset of columns
+    columns_to_keep = [
+        "state_id",
+        "city",
+        "average_winter_temperature",
+        "average_spring_temperature",
+        "average_summer_temperature",
+        "average_fall_temperature",
+        "total_precipitation",
+        "total_snowfall",
+    ]
+
+    # Just drop missing weather. There are 116 of them
+    df = df[columns_to_keep]
+    df = df.dropna()
+
+    return df.copy()
 
 
 def load_education() -> pd.DataFrame:
@@ -118,7 +194,26 @@ def load_education() -> pd.DataFrame:
     # Convert percent figures to decimals
     df_education.iloc[:, 1:5] = df_education.iloc[:, 1:5].div(100)
 
-    return df_education
+    # Column mapping
+    columns_to_rename = {
+        "FIPS": "county_fips",
+        "Percent of adults with less than a high school diploma, 2016-20": "less_than_highschool",
+        "Percent of adults with a high school diploma only, 2016-20": "high_school",
+        "Percent of adults completing some college or associate's degree, 2016-20": "some_college",
+        "Percent of adults with a bachelor's degree or higher 2016-20": "bachelors_or_higher",
+    }
+
+    df_education = df_education.rename(columns=columns_to_rename)
+
+    columns_to_keep = [
+        "county_fips",
+        "less_than_highschool",
+        "high_school",
+        "some_college",
+        "bachelors_or_higher",
+    ]
+
+    return df_education[columns_to_keep].copy()
 
 
 def load_political() -> pd.DataFrame:
@@ -293,16 +388,20 @@ def load_age_and_gender_data() -> pd.DataFrame:
         df_demographic["count_over_65"] / df_demographic["Total"]
     )
 
+    df_demographic["average_age"] = (
+        df_demographic["percent_under_10"] * 4.5
+        + df_demographic["percent_10_to_20"] * 14.5
+        + df_demographic["percent_20_to_30"] * 24.5
+        + df_demographic["percent_30_to_50"] * 39.5
+        + df_demographic["percent_50_to_65"] * 57.5
+        + df_demographic["percent_over_65"] * 70.0
+    )
+
     columns_to_keep = [
         "county_fips",
         "percent_male",
         "percent_female",
-        "percent_under_10",  # Children
-        "percent_10_to_20",  # Teens
-        "percent_20_to_30",  # Young adults
-        "percent_30_to_50",  # Middle Aged
-        "percent_50_to_65",  # Older
-        "percent_over_65",  # Retired
+        "average_age",
     ]
     return df_demographic[columns_to_keep]
 
