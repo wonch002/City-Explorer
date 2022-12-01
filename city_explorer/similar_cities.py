@@ -4,7 +4,7 @@ from typing import Callable, Dict, List
 
 # external
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.metrics.pairwise import euclidean_distances
 
 # internal
@@ -43,7 +43,7 @@ class TransformerPandasSupportMixin:
     def fit(self, X, y=None, sample_weight=None):
         """Apply preprocessing steps before fitting."""
         _X, _y = self._preprocess(X, y)
-        return super().fit(_X, _y, sample_weight)
+        return super().fit(_X, _y)
 
     def fit_transform(self, X, y=None, **fit_params):
         """Apply preprocessing steps before fitting, then apply postprocessing."""
@@ -54,12 +54,16 @@ class TransformerPandasSupportMixin:
     def transform(self, X, copy=None):
         """Apply preprocessing and postprocessing for transforming."""
         _X, _ = self._preprocess(X)
-        x_transformed = super().transform(_X, copy)
+        x_transformed = super().transform(_X)
         return self._postprocess(X, x_transformed)
 
 
 class StandardScaler(TransformerPandasSupportMixin, StandardScaler):
     """Adding pandas support to StandardScaler."""
+
+
+class MinMaxScaler(TransformerPandasSupportMixin, MinMaxScaler):
+    """Adding pandas support to MinMaxScaler."""
 
 
 class SimilarCities:
@@ -82,7 +86,7 @@ class SimilarCities:
             A scaler which describes how to normalize the dataset.
 
         feature_weights : Dict[str, float], optional
-            A dictionary which maps a feature to its corresponding weight. Default is to include 
+            A dictionary which maps a feature to its corresponding weight. Default is to include
             all numerical values.
         """
         self.similarity_func = similarity_func
@@ -107,7 +111,6 @@ class SimilarCities:
         df_features = df_features.merge(data["id"], left_index=True, right_index=True)
         df_features = df_features.set_index("id")
 
-        # df_features = df_features.dropna(axis=1).copy()
         return df_features
 
     def _apply_feature_weights(self, df_transformed: pd.DataFrame) -> pd.DataFrame:
@@ -117,6 +120,7 @@ class SimilarCities:
 
         # Apply feature weighting
         for feature_name, feature_weight in self.feature_weights.items():
+            print(feature_name)
             df_transformed[feature_name] *= feature_weight
 
         return df_transformed
@@ -155,21 +159,32 @@ class SimilarCities:
         return result
 
 
-def get_feature_weights(*sliders):
+def get_feature_weights(sliders: List[float]):
     """Compute feature weights given the slider inputs."""
-    # TODO:
+
     return dict(
-        population=0.5,
-        income_surplus=10,  # 10x as important
-        home_price_5yr_median=0.5,
-        A_MEDIAN=0.5,
+        population=sliders[0],  # Population
+        density=sliders[1],  # Population Denisty
+        average_age=sliders[2],  # Age
+        percent_male=sliders[3],  # Sex
+        rent_50_avg=sliders[4],  # Rental Prices
+        home_price_5yr_median=sliders[5],  # House Prices
+        income_surplus=sliders[6],  # Affordability
+        DEMOCRAT=sliders[7],  # Political Party
+        average_winter_temperature=sliders[8],  # Winter Temperature
+        average_spring_temperature=sliders[9],  # Spring Temperature
+        average_summer_temperature=sliders[10],  # Summer Temperature
+        average_fall_temperature=sliders[11],  # Fall Temperature
+        total_precipitation=sliders[12],  # Precipitation
+        total_snowfall=sliders[13],  # Snowfall
+        bachelors_or_higher=sliders[14],  # Education
     )
 
 
 def predict_similar_cities(
     city_id: int,
     occupation_title: str,
-    sliders: List[float],  # TODO
+    sliders: List[float],
     limit: int = None,
 ) -> pd.Series:
     """Compute similar cities based on the given criteria.
@@ -205,22 +220,23 @@ def predict_similar_cities(
     >>> similar_cities.predict_similar_cities(
         city_id=1840006830,
         occupation_title="Data Scientists",
-        sliders=[0.5],
+        sliders=[0.5, 0.1, ..., 1.0],
         limit=30,
     )
     """
+
     # Load data and extract feature weights
     df_input = data_loader.load_input_data(
         occupation_title=occupation_title, use_cache=True
     )
-    feature_weights = get_feature_weights(*sliders)
+    feature_weights = get_feature_weights(sliders)
 
     # Create an estimator which will determine the similar cities and fit the standard
     # scaler.
     # NOTE: If you want to update the distance function or scaler, overwrite it here
     similar_cities_estimator = SimilarCities(
         similarity_func=euclidean_distances,
-        scaler=StandardScaler,
+        scaler=MinMaxScaler,
         feature_weights=feature_weights,
     )
     similar_cities_estimator.fit(df_input)
