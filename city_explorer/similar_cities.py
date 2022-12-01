@@ -120,6 +120,7 @@ class SimilarCities:
 
         # Apply feature weighting
         for feature_name, feature_weight in self.feature_weights.items():
+            print(feature_name)
             df_transformed[feature_name] *= feature_weight
 
         return df_transformed
@@ -224,6 +225,7 @@ def predict_similar_cities(
         limit=30,
     )
     """
+
     # Load data and extract feature weights
     df_input = data_loader.load_input_data(
         occupation_title=occupation_title, use_cache=True
