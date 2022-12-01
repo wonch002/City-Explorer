@@ -159,33 +159,32 @@ class SimilarCities:
         return result
 
 
-def get_feature_weights(*sliders):
+def get_feature_weights(sliders: List[float]):
     """Compute feature weights given the slider inputs."""
 
-    # TODO: These sliders should be used to feed the feature weights
     return dict(
-        population=1.0,  # Population
-        density=1.0,  # Population Denisty
-        average_age=1.0,  # Age
-        percent_male=1.0,  # Sex
-        rent_50_avg=1.0,  # Rental Prices
-        home_price_5yr_median=1.0,  # House Prices
-        income_surplus=1.0,  # Affordability
-        DEMOCRAT=1.0,  # Political Party
-        average_winter_temperature=1.0,  # Winter Temperature
-        average_spring_temperature=1.0,  # Spring Temperature
-        average_summer_temperature=1.0,  # Summer Temperature
-        average_fall_temperature=1.0,  # Fall Temperature
-        total_precipitation=1.0,  # Precipitation
-        total_snowfall=1.0,  # Snowfall
-        bachelors_or_higher=1.0,  # Education
+        population=sliders[0],  # Population
+        density=sliders[1],  # Population Denisty
+        average_age=sliders[2],  # Age
+        percent_male=sliders[3],  # Sex
+        rent_50_avg=sliders[4],  # Rental Prices
+        home_price_5yr_median=sliders[5],  # House Prices
+        income_surplus=sliders[6],  # Affordability
+        DEMOCRAT=sliders[7],  # Political Party
+        average_winter_temperature=sliders[8],  # Winter Temperature
+        average_spring_temperature=sliders[9],  # Spring Temperature
+        average_summer_temperature=sliders[10],  # Summer Temperature
+        average_fall_temperature=sliders[11],  # Fall Temperature
+        total_precipitation=sliders[12],  # Precipitation
+        total_snowfall=sliders[13],  # Snowfall
+        bachelors_or_higher=sliders[14],  # Education
     )
 
 
 def predict_similar_cities(
     city_id: int,
     occupation_title: str,
-    sliders: List[float],  # TODO
+    sliders: List[float],
     limit: int = None,
 ) -> pd.Series:
     """Compute similar cities based on the given criteria.
@@ -221,7 +220,7 @@ def predict_similar_cities(
     >>> similar_cities.predict_similar_cities(
         city_id=1840006830,
         occupation_title="Data Scientists",
-        sliders=[0.5],
+        sliders=[0.5, 0.1, ..., 1.0],
         limit=30,
     )
     """
@@ -230,7 +229,7 @@ def predict_similar_cities(
     df_input = data_loader.load_input_data(
         occupation_title=occupation_title, use_cache=True
     )
-    feature_weights = get_feature_weights(*sliders)
+    feature_weights = get_feature_weights(sliders)
 
     # Create an estimator which will determine the similar cities and fit the standard
     # scaler.
