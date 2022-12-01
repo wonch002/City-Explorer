@@ -130,9 +130,9 @@ def similar_cities_tabpy(
 
     # index = city_id, value = similarity_score
     filtered_cities = pd.Series(result).loc[cities]
-    ordered_similarity_scores = filtered_cities.values.tolist()
+    city_rankings = filtered_cities.rank().astype(int).values.tolist()
 
-    return ordered_similarity_scores
+    return city_rankings
 
 
 def start_tabpy():
