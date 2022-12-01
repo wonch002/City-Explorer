@@ -1,38 +1,33 @@
 """Tabpy functions for Tableau."""
 import os
 import socket
-
-from typing import Callable
-
 from typing import Callable, Dict, List
 from flask import Flask, request
-
 
 import platform
 import time
 from tabpy.tabpy_tools.client import Client
 
+import similar_cities
 
-# Defining Example Add Function
-def add(x, y):
-    """Adds two numbers together using numpy.add()"""
-    import numpy as np
-
-    return np.add(x, y).tolist()
+HOSTNAME = "localhost"
+FLASK_PORT = 5001
+TABPY_PORT = 9004
 
 
 class SimilarCitiesClient(Client):
-    def __init__(self, server: str = "http://localhost", port: int = 9004):
+    def __init__(self, hostname: str = "localhost", port: int = 9004):
         """Initalize tabpy server."""
+        self.hostname = hostname
+        self.port = port
+        self.endpoint = f"http://{self.hostname}:{self.port}/"
         self._start_tabpy_server()
-        endpoint = f"{server}:{port}/"
-        super().__init__(endpoint)
+        super().__init__(self.endpoint)
 
-    @staticmethod
-    def _start_tabpy_server():
+    def _start_tabpy_server(self):
         """Start the Tabpy server by opening a terminal and running `Tabpy`."""
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        result = sock.connect_ex(("localhost", 9004))
+        result = sock.connect_ex((self.hostname, self.port))
         # Only start if the server is not already running
         if result != 0:
             print("Starting TabPy server.")
@@ -55,7 +50,7 @@ class SimilarCitiesClient(Client):
         else:
             print("TabPy server is already running.")
 
-        print("TabPy server is running at http://localhost:9004/")
+        print(f"TabPy server is running at {self.endpoint}")
 
     def deploy(
         self,
@@ -74,10 +69,6 @@ class SimilarCitiesClient(Client):
             description=description or func.__doc__,
             override=override,
         )
-
-
-# Start our client
-client = SimilarCitiesClient()
 
 
 def similar_cities_tabpy(
@@ -188,5 +179,6 @@ def predict_similar_cities():
     return predictions.to_json()
 
 
-# Deploy the neccessary functions
-client.deploy(func=add)
+if __name__ == "__main__":
+    start_tabpy()
+    app.run(host=HOSTNAME, port=FLASK_PORT)
