@@ -1,33 +1,33 @@
 """Tabpy functions for Tableau."""
 import os
 import socket
-from typing import Callable
+from typing import Callable, Dict
+from flask import Flask, request
 
 import platform
 import time
 from tabpy.tabpy_tools.client import Client
 
+import similar_cities
 
-# Defining Example Add Function
-def add(x, y):
-    """Adds two numbers together using numpy.add()"""
-    import numpy as np
-
-    return np.add(x, y).tolist()
+HOSTNAME = "localhost"
+FLASK_PORT = 5001
+TABPY_PORT = 9004
 
 
 class SimilarCitiesClient(Client):
-    def __init__(self, server: str = "http://localhost", port: int = 9004):
+    def __init__(self, hostname: str = "localhost", port: int = 9004):
         """Initalize tabpy server."""
+        self.hostname = hostname
+        self.port = port
+        self.endpoint = f"http://{self.hostname}:{self.port}/"
         self._start_tabpy_server()
-        endpoint = f"{server}:{port}/"
-        super().__init__(endpoint)
+        super().__init__(self.endpoint)
 
-    @staticmethod
-    def _start_tabpy_server():
+    def _start_tabpy_server(self):
         """Start the Tabpy server by opening a terminal and running `Tabpy`."""
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        result = sock.connect_ex(("localhost", 9004))
+        result = sock.connect_ex((self.hostname, self.port))
         # Only start if the server is not already running
         if result != 0:
             print("Starting TabPy server.")
@@ -50,7 +50,7 @@ class SimilarCitiesClient(Client):
         else:
             print("TabPy server is already running.")
 
-        print("TabPy server is running at http://localhost:9004/")
+        print(f"TabPy server is running at {self.endpoint}")
 
     def deploy(
         self,
@@ -71,8 +71,110 @@ class SimilarCitiesClient(Client):
         )
 
 
-# Start our client
-client = SimilarCitiesClient()
+def similar_cities_tabpy(
+    city_id: int,
+    occupation_title: str,
+    population: float,
+    population_denisty: float,
+    age: float,
+    sex: float,
+    rental_prices: float,
+    house_prices: float,
+    affordability: float,
+    political_party: float,
+    winter_temperature: float,
+    spring_temperature: float,
+    summer_temperature: float,
+    fall_temperature: float,
+    precipitation: float,
+    snowfall: float,
+    education: float,
+    limit: int,
+) -> Dict[str, float]:
+    """TabPy for similar cities."""
+    import requests
 
-# Deploy the neccessary functions
-client.deploy(func=add)
+    response = requests.get(
+        url=f"http://{HOSTNAME}:{FLASK_PORT}/predict_similar_cities/",
+        params=dict(
+            city_id=city_id,
+            occupation_title=occupation_title,
+            population=population,
+            population_denisty=population_denisty,
+            age=age,
+            sex=sex,
+            rental_prices=rental_prices,
+            house_prices=house_prices,
+            affordability=affordability,
+            political_party=political_party,
+            winter_temperature=winter_temperature,
+            spring_temperature=spring_temperature,
+            summer_temperature=summer_temperature,
+            fall_temperature=fall_temperature,
+            precipitation=precipitation,
+            snowfall=snowfall,
+            education=education,
+            limit=limit,
+        ),
+    )
+    # result has the following structure is in this form
+    # {
+    #   city_id (str): similarity_score (float),
+    #   ...: ...
+    # }
+    result = response.json()
+
+    return result
+
+
+def start_tabpy():
+    """Set up tabpy and deploy neccessary functions."""
+    client = SimilarCitiesClient()
+
+    # Deploy the neccessary functions
+    client.deploy(func=similar_cities_tabpy)
+
+
+# Deploy a flask application to do the heavy lifting.
+app = Flask(__name__)
+
+
+@app.route("/predict_similar_cities/", methods=["GET"])
+def predict_similar_cities():
+    """End point for predicting similar cities."""
+    city_id = int(request.args.get("city_id"))
+    occupation_title = str(request.args.get("occupation_title"))
+    limit = request.args.get("limit", default=None)
+    sliders = [
+        float(request.args.get("population", default=1.0)),
+        float(request.args.get("population_denisty", default=1.0)),
+        float(request.args.get("age", default=1.0)),
+        float(request.args.get("sex", default=1.0)),
+        float(request.args.get("rental_prices", default=1.0)),
+        float(request.args.get("house_prices", default=1.0)),
+        float(request.args.get("affordability", default=1.0)),
+        float(request.args.get("political_party", default=1.0)),
+        float(request.args.get("winter_temperature", default=1.0)),
+        float(request.args.get("spring_temperature", default=1.0)),
+        float(request.args.get("summer_temperature", default=1.0)),
+        float(request.args.get("fall_temperature", default=1.0)),
+        float(request.args.get("precipitation", default=1.0)),
+        float(request.args.get("snowfall", default=1.0)),
+        float(request.args.get("education", default=1.0)),
+    ]
+    if limit is not None:
+        limit = int(limit)
+
+    predictions = similar_cities.predict_similar_cities(
+        city_id=city_id,
+        occupation_title=occupation_title,
+        sliders=sliders,
+        limit=limit,
+    )
+
+    return predictions.to_json()
+
+
+if __name__ == "__main__":
+    start_tabpy()
+    app.run(host=HOSTNAME, port=FLASK_PORT)
