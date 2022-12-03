@@ -1,80 +1,52 @@
-# Overview
+# City Explorer
+
+City Explorer is a visualization that provides a user-driven method for exploring 
+cities in the United States. The general workflow is as follows:
+
+1. Users define a city of interest (e.g., Atlanta, GA) and the characteristics of 
+    that city that are meaningful to them.
+2. City Explorer provides a set of recommended towns similar to the original city 
+    of interest based on the initial characteristics.
+3. Users adjust their preferences as they see fit to continue exploring similar
+    cities.
+
+The frontend visualization leverages Tableau to prompt user input and display
+recommended cities (see `city_explorer/tableau/`). We created a Flask API to accept the
+information from Tableau to compute a similarity score using a weighted euclidean
+distance to deliver a set of recommended cities. Tableau and python are connected using
+a TabPy server (see https://www.tableau.com/developer/tools/python-integration-tabpy).
 
 
-## Project Contributors
+# Installation
 
+These instructions operate under the assumption that you have python and tableau
+installed. If you don't, please install them from their respective websites.
+
+1. Download the project locally
+
+2. Launch a terminal
+    Mac: `Command + Space Bar, Type Terminal and launch`
+    Windows: `Launch search (the bottom left) and type "cmd". Launch the command prompt` 
+
+3. Navigate to the project directory using the terminal (City-Explorer).
+
+4. Install project dependencies by running `pip install -r requirements.txt`
+
+5. Launch the TabPy and Flask server by running `python city_explorer/tabpy_loader.py`
+
+6. Launch the Tableau workbook found at
+   `City-Explorer/city_explorer/tableau/Tableau Mockup_v4.twbx`
+
+7. <TODO> Matt explain how to setup connection to TabPy.
+
+# Demo
+
+<TODO>
+
+
+# Project Contributors
 Georgia Institute of Technology
 
 CSE6242 - Team 162
 
 Ankit Anand, Matthew Tate, Krishna Tatineni, Cameron Wonchoba
-
-
-## Install project requirements
-
-`pip install -r requirements.txt`
-
-
-
-
-# Final Todos:
-
-Timeline:
-    Thursday - 
-    Friday - Due date 
-    Saturday - Grace period day 1
-    Sunday - Grace period day 2 (Submit project)
-
-
-## Cameron
-
-- Create flask (FastAPI?) API for predicting similar cities
-    * Create demo code to hit the API
-    * Explore deploying to AWS?
-- Create README.txt with instructions
-    * Get code running and server running
-    * Open Tableau
-- Review Poster & Report
-- Create 3 minute video
-- Create team162final.zip
-    * README.txt
-    * DOC
-    * CODE
-
-## Matt
-
-- Clustering analysis
-- Tablaeu & Tabpy to flask connection
-    * This will connect all sliders to code
-- Review Poster & Report
-- Create 3 minute video
-- Upload video to YouTube
-
-## Kris
-
-- Create draft of final report. Ready for review by Saturday.
-- Get poster to almost finished state by Friday.
-    * Needs input from Cameron, Matt & Ankit by EOD Thursday.
-        - Your approaches (algorithm and interactive visualization): 
-            * 5% What are they?
-            * 5% How do they work? 
-            * 5% Why do you think they can effectively solve your problem (i.e., what is the intuition behind your approaches)? 
-            * 5% What is new in your approaches?
-        - Experiments and results: 
-            * 5% How did you evaluate your approaches? 
-            * 10% What are the results? 
-            * 10% How do your methods compare to other methods?
- - Create 3 minute video
- - Execute instructions from README.txt
-
-## Ankit
-
-- Finish Tablaeu dashboard
-- Create one calculated field called `selected city flag`
-    * Set to 1 (display the city) or 0 (do not display the city)
-    * This flag represents whether the city is recommended
-    * city_id level
-- Create README.txt with instructions
-    - How to use the dashboard
-- Review Poster & Report
-- Create 3 minute video
