@@ -5,7 +5,7 @@ from typing import Callable, Dict, List
 # external
 import pandas as pd
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
-from sklearn.metrics.pairwise import euclidean_distances
+from sklearn.metrics.pairwise import euclidean_distances, manhattan_distances
 
 # internal
 import data_loader
@@ -120,7 +120,6 @@ class SimilarCities:
 
         # Apply feature weighting
         for feature_name, feature_weight in self.feature_weights.items():
-            print(feature_name)
             df_transformed[feature_name] *= feature_weight
 
         return df_transformed
@@ -235,7 +234,7 @@ def predict_similar_cities(
     # scaler.
     # NOTE: If you want to update the distance function or scaler, overwrite it here
     similar_cities_estimator = SimilarCities(
-        similarity_func=euclidean_distances,
+        similarity_func=manhattan_distances,
         scaler=MinMaxScaler,
         feature_weights=feature_weights,
     )
