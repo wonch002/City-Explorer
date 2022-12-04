@@ -120,7 +120,6 @@ class SimilarCities:
 
         # Apply feature weighting
         for feature_name, feature_weight in self.feature_weights.items():
-            print(feature_name)
             df_transformed[feature_name] *= feature_weight
 
         return df_transformed
