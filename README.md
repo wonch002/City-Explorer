@@ -35,7 +35,7 @@ installed. If you don't, please install them from their respective websites.
 5. Launch the TabPy and Flask server by running `python city_explorer/tabpy_loader.py`
 
 6. Launch the Tableau workbook found at
-   `City-Explorer/city_explorer/tableau/Tableau Mockup_v4.twbx`
+   `City-Explorer/city_explorer_dashboard.twbx`
 
 7. In the top navigation toolbar of the Tableau workbook, under Help -> Setting and 
 Performance -> Manage Analytics Extention Connection select TabPy as connection type
