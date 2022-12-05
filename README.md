@@ -37,7 +37,11 @@ installed. If you don't, please install them from their respective websites.
 6. Launch the Tableau workbook found at
    `City-Explorer/city_explorer/tableau/Tableau Mockup_v4.twbx`
 
-7. <TODO> Matt explain how to setup connection to TabPy.
+7. In the top navigation toolbar of the Tableau workbook, under Help -> Setting and 
+Performance -> Manage Analytics Extention Connection select TabPy as connection type
+
+8. Uncheck both "Require SSL" and "Sign in with username and password", set Hostname to
+"localhost" and port to "9004", then select "Save".
 
 # Demo
 

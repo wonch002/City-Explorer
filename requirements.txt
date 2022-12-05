@@ -1,10 +1,6 @@
 pandas
 numpy
 scikit-learn
-plotly
-plotly-geo
-geopandas
-pyshp
-shapely
 tabpy
 flask
+pyarrow
