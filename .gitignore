@@ -1,5 +1,7 @@
-# Ignore all CSV files except for the cities CSV
+# Ignore all cache files
+cache
 
+# Ignore all CSV files except for the cities CSV
 *.xlsx
 *.xls
 !city_explorer/datasets/cities/uscities.csv
